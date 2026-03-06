@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #30363d #0d1117;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #30363d;
+  border-radius: 3px;
+}
+
+/* Smooth transitions */
+.transition-theme {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(22, 27, 34, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(33, 38, 45, 0.6);
+}
+
+/* Glow effects */
+.glow-blue {
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.15);
+}
+
+.glow-green {
+  box-shadow: 0 0 20px rgba(63, 185, 80, 0.15);
+}
+
+/* Pulse animation for status dots */
+@keyframes pulse-dot {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* Badge styles */
+.badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.badge-ip {
+  @apply bg-blue-500/20 text-blue-400;
+}
+
+.badge-domain {
+  @apply bg-green-500/20 text-green-400;
+}
+
+.badge-url {
+  @apply bg-orange-500/20 text-orange-400;
+}
+
+.badge-hash {
+  @apply bg-purple-500/20 text-purple-400;
+}
+
+.badge-success {
+  @apply bg-green-500/20 text-green-400;
+}
+
+.badge-failed {
+  @apply bg-red-500/20 text-red-400;
+}
+
+.badge-partial {
+  @apply bg-yellow-500/20 text-yellow-400;
+}
+
+.badge-running {
+  @apply bg-blue-500/20 text-blue-400;
+}

@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  # Wazuh Agent - ships simulated logs to Wazuh Manager
+  wazuh-agent:
+    image: wazuh/wazuh-agent:4.7.0
+    container_name: wazuh-agent
+    restart: unless-stopped
+    environment:
+      - WAZUH_MANAGER=wazuh.manager
+      - WAZUH_AGENT_NAME=simulated-server-01
+    volumes:
+      - ./logs:/var/log/simulation   # Mount for injected log files
+    networks:
+      - wazuh-net
+    depends_on:
+      - taxii-mock
+
+  # TAXII Mock Server - serves STIX bundle as a TAXII 2.1 endpoint
+  taxii-mock:
+    image: python:3.11-slim
+    container_name: taxii-mock
+    working_dir: /app
+    command: >
+      sh -c "pip install flask stix2 -q &&
+             python mock_taxii_server.py"
+    volumes:
+      - ./stix_bundle.json:/app/stix_bundle.json
+      - ./mock_taxii_server.py:/app/mock_taxii_server.py
+    ports:
+      - "9000:9000"
+    networks:
+      - wazuh-net
+
+networks:
+  wazuh-net:
+    external: true

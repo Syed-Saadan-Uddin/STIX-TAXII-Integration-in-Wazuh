@@ -1,0 +1,23 @@
+database:
+  path: /app/data/wazuh_ti.db
+
+wazuh:
+  cdb_list_path: /var/ossec/etc/lists/threat_intel
+  reload_command: /var/ossec/bin/ossec-control reload
+  log_path: /var/ossec/logs/wazuh-ti.log
+
+scheduler:
+  default_interval_minutes: 60
+  auto_sync_enabled: true
+
+api:
+  host: 0.0.0.0
+  port: 8000
+  api_key_enabled: false
+  api_key: null
+
+logging:
+  level: INFO
+  file: /app/logs/wazuh-ti.log
+  max_size_mb: 50
+  backup_count: 5

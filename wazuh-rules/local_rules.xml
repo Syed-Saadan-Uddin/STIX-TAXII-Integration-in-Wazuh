@@ -1,0 +1,28 @@
+<!-- Wazuh-TI Custom Rules -->
+<!-- Deploy to: /var/ossec/etc/rules/local_rules.xml -->
+
+<group name="threat_intel,">
+
+  <!-- Rule: IP found in Threat Intel CDB list -->
+  <rule id="100001" level="12">
+    <if_sid>5710,5715,31103,31108</if_sid>
+    <list field="srcip" lookup="match_key">etc/lists/threat_intel</list>
+    <description>Threat Intel: Source IP $(srcip) is a known malicious indicator</description>
+    <mitre>
+      <id>T1071</id>
+    </mitre>
+    <group>threat_intel,malicious_ip,</group>
+  </rule>
+
+  <!-- Rule: Domain found in Threat Intel CDB list -->
+  <rule id="100002" level="12">
+    <if_sid>82200</if_sid>
+    <list field="data.dns.question.name" lookup="match_key">etc/lists/threat_intel</list>
+    <description>Threat Intel: DNS query for known malicious domain $(data.dns.question.name)</description>
+    <mitre>
+      <id>T1071</id>
+    </mitre>
+    <group>threat_intel,malicious_domain,</group>
+  </rule>
+
+</group>
