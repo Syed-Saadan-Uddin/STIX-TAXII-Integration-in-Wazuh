@@ -76,13 +76,14 @@ app.add_middleware(
 )
 
 # Register API routes
-from app.api.routes import indicators, feeds, mitre, sync, stats
+from app.api.routes import indicators, feeds, mitre, sync, stats, otx
 
 app.include_router(indicators.router, prefix="/api/v1")
 app.include_router(feeds.router, prefix="/api/v1")
 app.include_router(mitre.router, prefix="/api/v1")
 app.include_router(sync.router, prefix="/api/v1")
 app.include_router(stats.router, prefix="/api/v1")
+app.include_router(otx.router, prefix="/api/v1")
 
 # Serve React frontend from built static files (production)
 _frontend_dist = os.path.join(os.path.dirname(__file__), "..", "frontend", "dist")

@@ -83,7 +83,7 @@ def get_objects():
     return jsonify({
         "objects": bundle.get("objects", []),
         "more": False,
-    }), 200, {"Content-Type": "application/stix+json;version=2.1"}
+    }), 200, {"Content-Type": "application/taxii+json;version=2.1"}
 
 
 if __name__ == "__main__":

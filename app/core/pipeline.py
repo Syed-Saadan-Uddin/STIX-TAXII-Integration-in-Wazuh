@@ -142,28 +142,40 @@ def _sync_feed(
     try:
         logger.info(f"Syncing feed: {feed.name} ({feed.taxii_url})")
 
-        # Step 1: Initialize TAXII client with decrypted credentials
-        password = decrypt(feed.password) if feed.password else None
-        client = TAXIIClient(
-            url=feed.taxii_url,
-            username=feed.username,
-            password=password,
-        )
+        # Check feed type
+        if feed.taxii_url.startswith("threatfox://"):
+            from app.core.threatfox_client import ThreatFoxClient
+            api_key = feed.username
+            tf_client = ThreatFoxClient(api_key)
+            objects = tf_client.fetch_objects(days=1)
+        elif feed.taxii_url.startswith("otx://"):
+            from app.core.otx_client import OTXClient
+            api_key = feed.username
+            otx_client = OTXClient(api_key)
+            objects = otx_client.fetch_objects(limit=20)
+        else:
+            # Step 1: Initialize TAXII client with decrypted credentials
+            password = decrypt(feed.password) if feed.password else None
+            client = TAXIIClient(
+                url=feed.taxii_url,
+                username=feed.username,
+                password=password,
+            )
 
-        # Step 2: Fetch STIX objects (incremental since last sync)
-        collection_id = feed.collection_id
-        if not collection_id:
-            # Auto-discover first collection
-            collections = client.get_collections()
-            if collections:
-                collection_id = collections[0]["id"]
-            else:
-                raise ValueError("No collections found on TAXII server")
+            # Step 2: Fetch STIX objects (incremental since last sync)
+            collection_id = feed.collection_id
+            if not collection_id:
+                # Auto-discover first collection
+                collections = client.get_collections()
+                if collections:
+                    collection_id = collections[0]["id"]
+                else:
+                    raise ValueError("No collections found on TAXII server")
 
-        objects = client.fetch_objects(
-            collection_id=collection_id,
-            added_after=feed.last_sync,
-        )
+            objects = client.fetch_objects(
+                collection_id=collection_id,
+                added_after=feed.last_sync,
+            )
 
         if not objects:
             logger.info(f"No new objects from feed: {feed.name}")
@@ -253,3 +265,56 @@ def _sync_feed(
         status = "partial" if added > 0 else "failed"
         crud.complete_sync_log(db, sync_log.id, status, added, updated, str(e))
         summary["errors"].append(error_msg)
+
+
+def run_otx_sync(api_key: str) -> dict:
+    """Sync directly from OTX API"""
+    from app.core.otx_client import OTXClient
+    
+    db = SessionLocal()
+    try:
+        client = OTXClient(api_key)
+        objects = client.fetch_objects(limit=20)
+        
+        stix_parser = STIXParser()
+        ioc_extractor = IOCExtractor()
+        cdb_writer = CDBWriter(
+            cdb_path=get_config().wazuh.cdb_list_path,
+            reload_command=get_config().wazuh.reload_command,
+            log_path=get_config().wazuh.log_path,
+        )
+        
+        bundle = stix_parser.parse_bundle(objects)
+        added = 0
+        
+        # Find the OTX feed in DB or create it
+        otx_feed = crud.get_all_feeds(db)
+        otx_feed_id = None
+        for f in otx_feed:
+            if 'OTX' in f.name or 'otx' in f.taxii_url:
+                otx_feed_id = f.id
+                break
+        
+        for parsed_ind in bundle.indicators:
+            result = ioc_extractor.extract(parsed_ind.pattern)
+            if not result:
+                continue
+            value, ioc_type = result
+            indicator, was_created = crud.upsert_indicator(
+                db=db, value=value, type=ioc_type,
+                confidence=parsed_ind.confidence,
+                feed_id=otx_feed_id,
+                stix_id=parsed_ind.stix_id,
+                expires=parsed_ind.valid_until,
+            )
+            if was_created:
+                added += 1
+        
+        # Update CDB list
+        active_indicators, _ = crud.get_indicators(db, is_active=True, per_page=100000)
+        cdb_writer.write(active_indicators)
+        
+        logger.info(f"OTX sync complete: {added} new indicators")
+        return {"added": added, "total_objects": len(objects)}
+    finally:
+        db.close()

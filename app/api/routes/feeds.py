@@ -140,3 +140,30 @@ def _serialize_feed(feed) -> dict:
         "last_sync": feed.last_sync.isoformat() if feed.last_sync else None,
         "created_at": feed.created_at.isoformat() if feed.created_at else None,
     }
+
+
+def _test_connection(url: str, username: str = None, password: str = None) -> dict:
+    """Test TAXII or OTX connectivity and return result."""
+    # Override the existing function for OTX
+    if url.startswith("otx://"):
+        from app.core.otx_client import OTXClient
+        client = OTXClient(username)
+        success = client.test_connection()
+        return {
+            "success": success,
+            "message": "Connected to AlienVault OTX" if success else "OTX connection failed",
+            "collections": [{"id": "subscribed", "title": "OTX Subscribed Pulses"}],
+        }
+    try:
+        client = TAXIIClient(url=url, username=username, password=password)
+        success = client.test_connection()
+        collections = client.get_collections() if success else []
+        return {
+            "success": success,
+            "message": "Connection successful" if success else "Connection failed",
+            "collections": collections,
+        }
+    except TAXIIAuthError:
+        return {"success": False, "message": "Authentication failed", "collections": []}
+    except Exception as e:
+        return {"success": False, "message": f"Connection error: {str(e)}", "collections": []}
