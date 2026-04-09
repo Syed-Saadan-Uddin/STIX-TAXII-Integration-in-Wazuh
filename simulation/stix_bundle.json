@@ -1,18 +1,18 @@
 {
   "type": "bundle",
-  "id": "bundle--81ac4e86-8941-4da6-8e15-68fdacb7ed34",
+  "id": "bundle--08269cca-5aa4-4f73-aa4c-621a006d64e0",
   "objects": [
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--f3acea1a-9616-40b8-a6d8-1ba5758294c5",
-      "created": "2026-04-02T00:06:32.751774+00:00",
-      "modified": "2026-04-02T00:06:32.752953+00:00",
+      "id": "indicator--7134a536-8f93-490d-87a4-848081bb00f0",
+      "created": "2026-04-07T07:05:49.917967+00:00",
+      "modified": "2026-04-07T07:05:49.917996+00:00",
       "name": "Malicious ip: 83.142.209.203",
       "pattern": "[ipv4-addr:value = '83.142.209.203']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.752966+00:00",
-      "valid_until": "2026-07-01T00:06:32.752967+00:00",
+      "valid_from": "2026-04-07T07:05:49.918000+00:00",
+      "valid_until": "2026-07-06T07:05:49.918001+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -21,14 +21,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--71640945-f5af-419d-9ef5-17b403f4dc29",
-      "created": "2026-04-02T00:06:32.753362+00:00",
-      "modified": "2026-04-02T00:06:32.753366+00:00",
+      "id": "indicator--102d6b60-733b-4637-a73e-6f5c3cd23490",
+      "created": "2026-04-07T07:05:49.918023+00:00",
+      "modified": "2026-04-07T07:05:49.918026+00:00",
       "name": "Malicious ip: 212.71.124.188",
       "pattern": "[ipv4-addr:value = '212.71.124.188']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753383+00:00",
-      "valid_until": "2026-07-01T00:06:32.753388+00:00",
+      "valid_from": "2026-04-07T07:05:49.918028+00:00",
+      "valid_until": "2026-07-06T07:05:49.918030+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -37,14 +37,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--e2243a23-097c-4876-8f13-ddedb307b468",
-      "created": "2026-04-02T00:06:32.753405+00:00",
-      "modified": "2026-04-02T00:06:32.753407+00:00",
+      "id": "indicator--f9729782-abf8-472b-b32f-77cfe439812e",
+      "created": "2026-04-07T07:05:49.918039+00:00",
+      "modified": "2026-04-07T07:05:49.918041+00:00",
       "name": "Malicious ip: 83.142.209.11",
       "pattern": "[ipv4-addr:value = '83.142.209.11']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753409+00:00",
-      "valid_until": "2026-07-01T00:06:32.753410+00:00",
+      "valid_from": "2026-04-07T07:05:49.918043+00:00",
+      "valid_until": "2026-07-06T07:05:49.918044+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -53,14 +53,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--362665cf-a386-4c8a-a5fc-e340320e72d8",
-      "created": "2026-04-02T00:06:32.753430+00:00",
-      "modified": "2026-04-02T00:06:32.753432+00:00",
+      "id": "indicator--f88a5426-4b0f-4e3d-bd41-d8aac525d5f2",
+      "created": "2026-04-07T07:05:49.918055+00:00",
+      "modified": "2026-04-07T07:05:49.918056+00:00",
       "name": "Malicious ip: 23.142.184.129",
       "pattern": "[ipv4-addr:value = '23.142.184.129']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753434+00:00",
-      "valid_until": "2026-07-01T00:06:32.753435+00:00",
+      "valid_from": "2026-04-07T07:05:49.918058+00:00",
+      "valid_until": "2026-07-06T07:05:49.918059+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -69,14 +69,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--91d913a7-b625-42d4-8635-1fe43e4ac42c",
-      "created": "2026-04-02T00:06:32.753445+00:00",
-      "modified": "2026-04-02T00:06:32.753447+00:00",
+      "id": "indicator--59b38fc3-9c07-4be2-bc6c-dc19435499b7",
+      "created": "2026-04-07T07:05:49.918067+00:00",
+      "modified": "2026-04-07T07:05:49.918069+00:00",
       "name": "Malicious ip: 45.148.10.212",
       "pattern": "[ipv4-addr:value = '45.148.10.212']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753449+00:00",
-      "valid_until": "2026-07-01T00:06:32.753450+00:00",
+      "valid_from": "2026-04-07T07:05:49.918070+00:00",
+      "valid_until": "2026-07-06T07:05:49.918072+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -85,14 +85,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--a4c215f9-ba4c-4af6-bebd-6348424482ce",
-      "created": "2026-04-02T00:06:32.753457+00:00",
-      "modified": "2026-04-02T00:06:32.753459+00:00",
+      "id": "indicator--e4971965-c0f8-47b8-80f7-a7a89724641b",
+      "created": "2026-04-07T07:05:49.918078+00:00",
+      "modified": "2026-04-07T07:05:49.918080+00:00",
       "name": "Malicious ip: 209.34.235.18",
       "pattern": "[ipv4-addr:value = '209.34.235.18']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753461+00:00",
-      "valid_until": "2026-07-01T00:06:32.753462+00:00",
+      "valid_from": "2026-04-07T07:05:49.918082+00:00",
+      "valid_until": "2026-07-06T07:05:49.918083+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -101,14 +101,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--1445452a-764b-4b16-8ee8-1c68fe0a7d1e",
-      "created": "2026-04-02T00:06:32.753468+00:00",
-      "modified": "2026-04-02T00:06:32.753469+00:00",
+      "id": "indicator--3e366288-0d66-4fe7-b233-924de1d493e2",
+      "created": "2026-04-07T07:05:49.918092+00:00",
+      "modified": "2026-04-07T07:05:49.918093+00:00",
       "name": "Malicious ip: 63.251.162.11",
       "pattern": "[ipv4-addr:value = '63.251.162.11']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753471+00:00",
-      "valid_until": "2026-07-01T00:06:32.753472+00:00",
+      "valid_from": "2026-04-07T07:05:49.918095+00:00",
+      "valid_until": "2026-07-06T07:05:49.918096+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -117,14 +117,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--45901a2b-a9f9-4984-b4c9-a416665046a0",
-      "created": "2026-04-02T00:06:32.753479+00:00",
-      "modified": "2026-04-02T00:06:32.753480+00:00",
+      "id": "indicator--cfdc834a-6061-4231-8f48-773ad6c5a359",
+      "created": "2026-04-07T07:05:49.918105+00:00",
+      "modified": "2026-04-07T07:05:49.918107+00:00",
       "name": "Malicious ip: 195.5.171.242",
       "pattern": "[ipv4-addr:value = '195.5.171.242']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753482+00:00",
-      "valid_until": "2026-07-01T00:06:32.753483+00:00",
+      "valid_from": "2026-04-07T07:05:49.918109+00:00",
+      "valid_until": "2026-07-06T07:05:49.918110+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -133,14 +133,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--4b0b4204-5e9e-4dc4-bb6a-8bbf43b6b343",
-      "created": "2026-04-02T00:06:32.753493+00:00",
-      "modified": "2026-04-02T00:06:32.753495+00:00",
+      "id": "indicator--e9d49ae9-9a1f-4b4c-a943-7ca7ba1b4735",
+      "created": "2026-04-07T07:05:49.918116+00:00",
+      "modified": "2026-04-07T07:05:49.918118+00:00",
       "name": "Malicious domain: debianhacks.net",
       "pattern": "[domain-name:value = 'debianhacks.net']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753497+00:00",
-      "valid_until": "2026-07-01T00:06:32.753498+00:00",
+      "valid_from": "2026-04-07T07:05:49.918120+00:00",
+      "valid_until": "2026-07-06T07:05:49.918121+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -149,14 +149,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--4aaf70c4-ae43-4881-adab-82ed418f7334",
-      "created": "2026-04-02T00:06:32.753506+00:00",
-      "modified": "2026-04-02T00:06:32.753508+00:00",
+      "id": "indicator--a0f2df34-781d-4da1-978a-fe48958ccff2",
+      "created": "2026-04-07T07:05:49.918127+00:00",
+      "modified": "2026-04-07T07:05:49.918129+00:00",
       "name": "Malicious domain: maccmsp.la",
       "pattern": "[domain-name:value = 'maccmsp.la']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753510+00:00",
-      "valid_until": "2026-07-01T00:06:32.753511+00:00",
+      "valid_from": "2026-04-07T07:05:49.918131+00:00",
+      "valid_until": "2026-07-06T07:05:49.918132+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -165,14 +165,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--7e1abb62-ba5e-4458-9c25-064a2462945b",
-      "created": "2026-04-02T00:06:32.753517+00:00",
-      "modified": "2026-04-02T00:06:32.753519+00:00",
+      "id": "indicator--a884c681-0bde-4333-92ea-55d7d6617009",
+      "created": "2026-04-07T07:05:49.918138+00:00",
+      "modified": "2026-04-07T07:05:49.918140+00:00",
       "name": "Malicious domain: linuxdistro.net",
       "pattern": "[domain-name:value = 'linuxdistro.net']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753520+00:00",
-      "valid_until": "2026-07-01T00:06:32.753522+00:00",
+      "valid_from": "2026-04-07T07:05:49.918142+00:00",
+      "valid_until": "2026-07-06T07:05:49.918143+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -181,14 +181,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--4af6bb1a-8369-4ac4-8fd1-c8120e8013a9",
-      "created": "2026-04-02T00:06:32.753527+00:00",
-      "modified": "2026-04-02T00:06:32.753529+00:00",
+      "id": "indicator--db75e317-ac43-4a04-8bb1-94d48820a3b3",
+      "created": "2026-04-07T07:05:49.918149+00:00",
+      "modified": "2026-04-07T07:05:49.918150+00:00",
       "name": "Malicious domain: ailyun-oss.com",
       "pattern": "[domain-name:value = 'ailyun-oss.com']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753531+00:00",
-      "valid_until": "2026-07-01T00:06:32.753532+00:00",
+      "valid_from": "2026-04-07T07:05:49.918152+00:00",
+      "valid_until": "2026-07-06T07:05:49.918153+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -197,14 +197,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--d6c2445d-6de9-486d-8785-92c58b103082",
-      "created": "2026-04-02T00:06:32.753538+00:00",
-      "modified": "2026-04-02T00:06:32.753539+00:00",
+      "id": "indicator--5643f138-7053-4dc5-9378-0b3c539812ea",
+      "created": "2026-04-07T07:05:49.918159+00:00",
+      "modified": "2026-04-07T07:05:49.918161+00:00",
       "name": "Malicious domain: almacensantangel.com",
       "pattern": "[domain-name:value = 'almacensantangel.com']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753541+00:00",
-      "valid_until": "2026-07-01T00:06:32.753542+00:00",
+      "valid_from": "2026-04-07T07:05:49.918162+00:00",
+      "valid_until": "2026-07-06T07:05:49.918164+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -213,14 +213,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--80532896-aab9-4659-bbd5-eef3bb015877",
-      "created": "2026-04-02T00:06:32.753550+00:00",
-      "modified": "2026-04-02T00:06:32.753552+00:00",
+      "id": "indicator--b70d720f-f2a9-4f62-a970-5990239260e7",
+      "created": "2026-04-07T07:05:49.918172+00:00",
+      "modified": "2026-04-07T07:05:49.918174+00:00",
       "name": "Malicious domain: jsdclivr.com",
       "pattern": "[domain-name:value = 'jsdclivr.com']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753554+00:00",
-      "valid_until": "2026-07-01T00:06:32.753555+00:00",
+      "valid_from": "2026-04-07T07:05:49.918176+00:00",
+      "valid_until": "2026-07-06T07:05:49.918177+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -229,14 +229,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--1c8a4ea0-5199-4813-93b3-53f40d7249a8",
-      "created": "2026-04-02T00:06:32.753560+00:00",
-      "modified": "2026-04-02T00:06:32.753562+00:00",
+      "id": "indicator--fddd5eba-fc84-4038-8c21-8187087390c9",
+      "created": "2026-04-07T07:05:49.918182+00:00",
+      "modified": "2026-04-07T07:05:49.918184+00:00",
       "name": "Malicious domain: aqyaqua.com",
       "pattern": "[domain-name:value = 'aqyaqua.com']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753563+00:00",
-      "valid_until": "2026-07-01T00:06:32.753565+00:00",
+      "valid_from": "2026-04-07T07:05:49.918185+00:00",
+      "valid_until": "2026-07-06T07:05:49.918189+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -245,14 +245,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--df5eafa3-b992-428c-86e0-498e6ea3cad8",
-      "created": "2026-04-02T00:06:32.753570+00:00",
-      "modified": "2026-04-02T00:06:32.753572+00:00",
+      "id": "indicator--df2711cf-712c-4ecf-9132-49a5281dd697",
+      "created": "2026-04-07T07:05:49.918195+00:00",
+      "modified": "2026-04-07T07:05:49.918197+00:00",
       "name": "Malicious domain: goyppg06.com",
       "pattern": "[domain-name:value = 'goyppg06.com']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753573+00:00",
-      "valid_until": "2026-07-01T00:06:32.753575+00:00",
+      "valid_from": "2026-04-07T07:05:49.918198+00:00",
+      "valid_until": "2026-07-06T07:05:49.918200+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -261,14 +261,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--989a151c-d1dc-4d46-977f-e2a802c3ef09",
-      "created": "2026-04-02T00:06:32.753580+00:00",
-      "modified": "2026-04-02T00:06:32.753582+00:00",
+      "id": "indicator--84f58459-fe2c-4236-bd29-b3b4987953c3",
+      "created": "2026-04-07T07:05:49.918205+00:00",
+      "modified": "2026-04-07T07:05:49.918207+00:00",
       "name": "Malicious domain: zybbzlast.com",
       "pattern": "[domain-name:value = 'zybbzlast.com']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753583+00:00",
-      "valid_until": "2026-07-01T00:06:32.753584+00:00",
+      "valid_from": "2026-04-07T07:05:49.918209+00:00",
+      "valid_until": "2026-07-06T07:05:49.918210+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -277,14 +277,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--ab6e42ab-126c-43a4-bf26-3ea1687fae42",
-      "created": "2026-04-02T00:06:32.753593+00:00",
-      "modified": "2026-04-02T00:06:32.753595+00:00",
+      "id": "indicator--2796ae81-fb27-48ee-83e4-0472ab467b90",
+      "created": "2026-04-07T07:05:49.918216+00:00",
+      "modified": "2026-04-07T07:05:49.918217+00:00",
       "name": "Malicious domain: clondflare.com",
       "pattern": "[domain-name:value = 'clondflare.com']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753596+00:00",
-      "valid_until": "2026-07-01T00:06:32.753598+00:00",
+      "valid_from": "2026-04-07T07:05:49.918219+00:00",
+      "valid_until": "2026-07-06T07:05:49.918220+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -293,14 +293,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--5866a55d-3a19-4c5d-b441-4905e0bd7a70",
-      "created": "2026-04-02T00:06:32.753604+00:00",
-      "modified": "2026-04-02T00:06:32.753606+00:00",
+      "id": "indicator--1061e1d7-423b-42f9-9db8-63bd9bb90be4",
+      "created": "2026-04-07T07:05:49.918226+00:00",
+      "modified": "2026-04-07T07:05:49.918228+00:00",
       "name": "Malicious hash: ae0de7034c4866556675740f6647bfcc",
       "pattern": "[file:hashes.'SHA-256' = 'ae0de7034c4866556675740f6647bfcc']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753608+00:00",
-      "valid_until": "2026-07-01T00:06:32.753609+00:00",
+      "valid_from": "2026-04-07T07:05:49.918230+00:00",
+      "valid_until": "2026-07-06T07:05:49.918231+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -309,14 +309,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--7154ac33-239f-431f-8080-899664b57ea1",
-      "created": "2026-04-02T00:06:32.753615+00:00",
-      "modified": "2026-04-02T00:06:32.753616+00:00",
+      "id": "indicator--2ade25bd-c296-4033-b127-fb4f74444659",
+      "created": "2026-04-07T07:05:49.918238+00:00",
+      "modified": "2026-04-07T07:05:49.918239+00:00",
       "name": "Malicious hash: 72c11e2df012ec603aee9ba7a0504bf1",
       "pattern": "[file:hashes.'SHA-256' = '72c11e2df012ec603aee9ba7a0504bf1']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753618+00:00",
-      "valid_until": "2026-07-01T00:06:32.753619+00:00",
+      "valid_from": "2026-04-07T07:05:49.918241+00:00",
+      "valid_until": "2026-07-06T07:05:49.918242+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -325,14 +325,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--2b885a8f-4509-4f4b-bfd9-aa03bae07269",
-      "created": "2026-04-02T00:06:32.753625+00:00",
-      "modified": "2026-04-02T00:06:32.753627+00:00",
+      "id": "indicator--3cd5a50b-aba1-43cf-95f5-1cd977bf2c02",
+      "created": "2026-04-07T07:05:49.918248+00:00",
+      "modified": "2026-04-07T07:05:49.918250+00:00",
       "name": "Malicious hash: d5edd791021b966fb6af0ace09319ace7b97d6642363ef27b3d5056ca654a94c",
       "pattern": "[file:hashes.'SHA-256' = 'd5edd791021b966fb6af0ace09319ace7b97d6642363ef27b3d5056ca654a94c']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753628+00:00",
-      "valid_until": "2026-07-01T00:06:32.753630+00:00",
+      "valid_from": "2026-04-07T07:05:49.918251+00:00",
+      "valid_until": "2026-07-06T07:05:49.918252+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -341,14 +341,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--78565a6c-fa23-44ba-917f-fb8ebb1f06ca",
-      "created": "2026-04-02T00:06:32.753635+00:00",
-      "modified": "2026-04-02T00:06:32.753636+00:00",
+      "id": "indicator--c81cad1b-db0e-46cd-90f2-38d1b31c8f5f",
+      "created": "2026-04-07T07:05:49.918258+00:00",
+      "modified": "2026-04-07T07:05:49.918259+00:00",
       "name": "Malicious hash: 7b5cc85e82249b0c452c66563edca498ce9d0c70badef04ab2c52acef4d629ca",
       "pattern": "[file:hashes.'SHA-256' = '7b5cc85e82249b0c452c66563edca498ce9d0c70badef04ab2c52acef4d629ca']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753638+00:00",
-      "valid_until": "2026-07-01T00:06:32.753639+00:00",
+      "valid_from": "2026-04-07T07:05:49.918261+00:00",
+      "valid_until": "2026-07-06T07:05:49.918262+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -357,14 +357,14 @@
     {
       "type": "indicator",
       "spec_version": "2.1",
-      "id": "indicator--7733f219-5fc3-4ecf-aa08-9b0072a680bd",
-      "created": "2026-04-02T00:06:32.753645+00:00",
-      "modified": "2026-04-02T00:06:32.753647+00:00",
+      "id": "indicator--e7b63bc2-26d1-4f13-964b-6310442e2399",
+      "created": "2026-04-07T07:05:49.918269+00:00",
+      "modified": "2026-04-07T07:05:49.918270+00:00",
       "name": "Malicious hash: e6310d8a003d7ac101a6b1cd39ff6c6a88ee454b767c1bdce143e04bc1113243",
       "pattern": "[file:hashes.'SHA-256' = 'e6310d8a003d7ac101a6b1cd39ff6c6a88ee454b767c1bdce143e04bc1113243']",
       "pattern_type": "stix",
-      "valid_from": "2026-04-02T00:06:32.753648+00:00",
-      "valid_until": "2026-07-01T00:06:32.753649+00:00",
+      "valid_from": "2026-04-07T07:05:49.918272+00:00",
+      "valid_until": "2026-07-06T07:05:49.918273+00:00",
       "confidence": 85,
       "labels": [
         "malicious-activity"
@@ -373,31 +373,9 @@
     {
       "type": "attack-pattern",
       "spec_version": "2.1",
-      "id": "attack-pattern--9b96884d-ec54-4b4b-b2d2-6e1a7b7b6d3b",
-      "created": "2026-04-02T00:06:32.753659+00:00",
-      "modified": "2026-04-02T00:06:32.753661+00:00",
-      "name": "Command and Scripting Interpreter",
-      "description": "MITRE ATT&CK technique T1059: Command and Scripting Interpreter",
-      "external_references": [
-        {
-          "source_name": "mitre-attack",
-          "external_id": "T1059",
-          "url": "https://attack.mitre.org/techniques/T1059/"
-        }
-      ],
-      "kill_chain_phases": [
-        {
-          "kill_chain_name": "mitre-attack",
-          "phase_name": "execution"
-        }
-      ]
-    },
-    {
-      "type": "attack-pattern",
-      "spec_version": "2.1",
-      "id": "attack-pattern--c29db731-f86e-40ce-a2a1-ae2560526db3",
-      "created": "2026-04-02T00:06:32.753670+00:00",
-      "modified": "2026-04-02T00:06:32.753672+00:00",
+      "id": "attack-pattern--dc93aef0-bdf0-479c-9223-eaed2ddde400",
+      "created": "2026-04-07T07:05:49.918283+00:00",
+      "modified": "2026-04-07T07:05:49.918304+00:00",
       "name": "Application Layer Protocol",
       "description": "MITRE ATT&CK technique T1071: Application Layer Protocol",
       "external_references": [
@@ -417,9 +395,75 @@
     {
       "type": "attack-pattern",
       "spec_version": "2.1",
-      "id": "attack-pattern--e2eabb4f-5d19-4a2c-a8eb-1784ed9b2b4c",
-      "created": "2026-04-02T00:06:32.753678+00:00",
-      "modified": "2026-04-02T00:06:32.753680+00:00",
+      "id": "attack-pattern--33ade4d3-c7b5-46c1-8158-19ed8c15e05c",
+      "created": "2026-04-07T07:05:49.918318+00:00",
+      "modified": "2026-04-07T07:05:49.918320+00:00",
+      "name": "Non-Application Layer Protocol",
+      "description": "MITRE ATT&CK technique T1095: Non-Application Layer Protocol",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1095",
+          "url": "https://attack.mitre.org/techniques/T1095/"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "command-and-control"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--361da4e3-ade3-44c5-bd42-12cb007cae7e",
+      "created": "2026-04-07T07:05:49.919031+00:00",
+      "modified": "2026-04-07T07:05:49.919036+00:00",
+      "name": "Non-Standard Port",
+      "description": "MITRE ATT&CK technique T1571: Non-Standard Port",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1571",
+          "url": "https://attack.mitre.org/techniques/T1571/"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "command-and-control"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--c7c5b180-f304-45b7-90eb-f2d267bb8ec2",
+      "created": "2026-04-07T07:05:49.919044+00:00",
+      "modified": "2026-04-07T07:05:49.919045+00:00",
+      "name": "Encrypted Channel",
+      "description": "MITRE ATT&CK technique T1573: Encrypted Channel",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1573",
+          "url": "https://attack.mitre.org/techniques/T1573/"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "command-and-control"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--e9fef338-74c6-4ed7-9721-88a17b595a25",
+      "created": "2026-04-07T07:05:49.919050+00:00",
+      "modified": "2026-04-07T07:05:49.919052+00:00",
       "name": "Phishing",
       "description": "MITRE ATT&CK technique T1566: Phishing",
       "external_references": [
@@ -439,9 +483,9 @@
     {
       "type": "attack-pattern",
       "spec_version": "2.1",
-      "id": "attack-pattern--57078d38-0155-4326-a9c8-1bbbd4208728",
-      "created": "2026-04-02T00:06:32.753686+00:00",
-      "modified": "2026-04-02T00:06:32.753687+00:00",
+      "id": "attack-pattern--4882ec7e-35a4-40cd-acef-d8b5f4825412",
+      "created": "2026-04-07T07:05:49.919066+00:00",
+      "modified": "2026-04-07T07:05:49.919068+00:00",
       "name": "Exploit Public-Facing Application",
       "description": "MITRE ATT&CK technique T1190: Exploit Public-Facing Application",
       "external_references": [
@@ -461,9 +505,9 @@
     {
       "type": "attack-pattern",
       "spec_version": "2.1",
-      "id": "attack-pattern--73ee8496-88c0-4b57-88af-88a2cef172f1",
-      "created": "2026-04-02T00:06:32.753696+00:00",
-      "modified": "2026-04-02T00:06:32.753698+00:00",
+      "id": "attack-pattern--ac12172f-7fac-44e9-86d8-898fa08f2c78",
+      "created": "2026-04-07T07:05:49.919077+00:00",
+      "modified": "2026-04-07T07:05:49.919079+00:00",
       "name": "Valid Accounts",
       "description": "MITRE ATT&CK technique T1078: Valid Accounts",
       "external_references": [
@@ -481,234 +525,520 @@
       ]
     },
     {
-      "type": "relationship",
+      "type": "attack-pattern",
       "spec_version": "2.1",
-      "id": "relationship--2051c7ab-b327-4ed3-b21f-4bab8905f37b",
-      "created": "2026-04-02T00:06:32.753707+00:00",
-      "modified": "2026-04-02T00:06:32.753709+00:00",
-      "relationship_type": "indicates",
-      "source_ref": "indicator--f3acea1a-9616-40b8-a6d8-1ba5758294c5",
-      "target_ref": "attack-pattern--9b96884d-ec54-4b4b-b2d2-6e1a7b7b6d3b"
+      "id": "attack-pattern--9fd85fdf-c088-4ced-8834-32df708150c5",
+      "created": "2026-04-07T07:05:49.919087+00:00",
+      "modified": "2026-04-07T07:05:49.919089+00:00",
+      "name": "External Remote Services",
+      "description": "MITRE ATT&CK technique T1133: External Remote Services",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1133",
+          "url": "https://attack.mitre.org/techniques/T1133/"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "initial-access"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--d3be23b9-a439-4b23-b06d-c4b6fa74b266",
+      "created": "2026-04-07T07:05:49.919094+00:00",
+      "modified": "2026-04-07T07:05:49.919095+00:00",
+      "name": "Command and Scripting Interpreter",
+      "description": "MITRE ATT&CK technique T1059: Command and Scripting Interpreter",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1059",
+          "url": "https://attack.mitre.org/techniques/T1059/"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "execution"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--32f0d9ac-fcba-4b09-96f5-a15c9c7996bb",
+      "created": "2026-04-07T07:05:49.919100+00:00",
+      "modified": "2026-04-07T07:05:49.919102+00:00",
+      "name": "Exploitation for Client Execution",
+      "description": "MITRE ATT&CK technique T1203: Exploitation for Client Execution",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1203",
+          "url": "https://attack.mitre.org/techniques/T1203/"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "execution"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--5f7167ed-9220-4cad-93d6-21872cba03b6",
+      "created": "2026-04-07T07:05:49.919107+00:00",
+      "modified": "2026-04-07T07:05:49.919109+00:00",
+      "name": "Scheduled Task/Job",
+      "description": "MITRE ATT&CK technique T1053: Scheduled Task/Job",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1053",
+          "url": "https://attack.mitre.org/techniques/T1053/"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "persistence"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--fec61065-ca59-4920-9db8-d1b494872ff9",
+      "created": "2026-04-07T07:05:49.919117+00:00",
+      "modified": "2026-04-07T07:05:49.919119+00:00",
+      "name": "Create Account",
+      "description": "MITRE ATT&CK technique T1136: Create Account",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1136",
+          "url": "https://attack.mitre.org/techniques/T1136/"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "persistence"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--a8578f6a-5b65-4816-910d-67adb5de7fef",
+      "created": "2026-04-07T07:05:49.919124+00:00",
+      "modified": "2026-04-07T07:05:49.919125+00:00",
+      "name": "Obfuscated Files or Information",
+      "description": "MITRE ATT&CK technique T1027: Obfuscated Files or Information",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1027",
+          "url": "https://attack.mitre.org/techniques/T1027/"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "defense-evasion"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--11c9080b-4a4d-49f5-a65e-0404bc626559",
+      "created": "2026-04-07T07:05:49.919130+00:00",
+      "modified": "2026-04-07T07:05:49.919132+00:00",
+      "name": "Impair Defenses",
+      "description": "MITRE ATT&CK technique T1562: Impair Defenses",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1562",
+          "url": "https://attack.mitre.org/techniques/T1562/"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "defense-evasion"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--91836f08-2d6f-4159-a863-9aa8467f964b",
+      "created": "2026-04-07T07:05:49.919139+00:00",
+      "modified": "2026-04-07T07:05:49.919140+00:00",
+      "name": "Brute Force",
+      "description": "MITRE ATT&CK technique T1110: Brute Force",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1110",
+          "url": "https://attack.mitre.org/techniques/T1110/"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "credential-access"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--59e1a37f-4641-4c0e-a28a-b342d8188fcd",
+      "created": "2026-04-07T07:05:49.919145+00:00",
+      "modified": "2026-04-07T07:05:49.919147+00:00",
+      "name": "Credentials from Password Stores",
+      "description": "MITRE ATT&CK technique T1555: Credentials from Password Stores",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1555",
+          "url": "https://attack.mitre.org/techniques/T1555/"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "credential-access"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--955e5381-874c-438e-8168-7807a5dc8d8c",
+      "created": "2026-04-07T07:05:49.919151+00:00",
+      "modified": "2026-04-07T07:05:49.919153+00:00",
+      "name": "Exfiltration Over C2 Channel",
+      "description": "MITRE ATT&CK technique T1041: Exfiltration Over C2 Channel",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1041",
+          "url": "https://attack.mitre.org/techniques/T1041/"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "exfiltration"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--0a2acc25-ec31-44bf-a312-a896539f6c81",
+      "created": "2026-04-07T07:05:49.919161+00:00",
+      "modified": "2026-04-07T07:05:49.919163+00:00",
+      "name": "Exfiltration Over Alternative Protocol",
+      "description": "MITRE ATT&CK technique T1048: Exfiltration Over Alternative Protocol",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1048",
+          "url": "https://attack.mitre.org/techniques/T1048/"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "exfiltration"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--b66100fb-b01d-4c67-88a3-321f6bacee43",
+      "created": "2026-04-07T07:05:49.919168+00:00",
+      "modified": "2026-04-07T07:05:49.919170+00:00",
+      "name": "Data Encrypted for Impact",
+      "description": "MITRE ATT&CK technique T1486: Data Encrypted for Impact",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1486",
+          "url": "https://attack.mitre.org/techniques/T1486/"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "impact"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--85214c58-acfb-4b59-9b14-d90712603539",
+      "created": "2026-04-07T07:05:49.919175+00:00",
+      "modified": "2026-04-07T07:05:49.919176+00:00",
+      "name": "Network Denial of Service",
+      "description": "MITRE ATT&CK technique T1498: Network Denial of Service",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1498",
+          "url": "https://attack.mitre.org/techniques/T1498/"
+        }
+      ],
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mitre-attack",
+          "phase_name": "impact"
+        }
+      ]
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--36e758aa-618b-49c3-999f-1fec9fec533f",
-      "created": "2026-04-02T00:06:32.753715+00:00",
-      "modified": "2026-04-02T00:06:32.753716+00:00",
+      "id": "relationship--5c305613-467f-454b-a261-7d881a373638",
+      "created": "2026-04-07T07:05:49.919186+00:00",
+      "modified": "2026-04-07T07:05:49.919188+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--71640945-f5af-419d-9ef5-17b403f4dc29",
-      "target_ref": "attack-pattern--c29db731-f86e-40ce-a2a1-ae2560526db3"
+      "source_ref": "indicator--7134a536-8f93-490d-87a4-848081bb00f0",
+      "target_ref": "attack-pattern--dc93aef0-bdf0-479c-9223-eaed2ddde400"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--9657b4c0-6b91-4dae-86f2-233842723907",
-      "created": "2026-04-02T00:06:32.753722+00:00",
-      "modified": "2026-04-02T00:06:32.753723+00:00",
+      "id": "relationship--47a69413-5525-4239-94c8-539401f0df64",
+      "created": "2026-04-07T07:05:49.919195+00:00",
+      "modified": "2026-04-07T07:05:49.919196+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--e2243a23-097c-4876-8f13-ddedb307b468",
-      "target_ref": "attack-pattern--e2eabb4f-5d19-4a2c-a8eb-1784ed9b2b4c"
+      "source_ref": "indicator--102d6b60-733b-4637-a73e-6f5c3cd23490",
+      "target_ref": "attack-pattern--33ade4d3-c7b5-46c1-8158-19ed8c15e05c"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--d4a858fe-d6cf-4fd3-bfeb-427e386ee4dd",
-      "created": "2026-04-02T00:06:32.753727+00:00",
-      "modified": "2026-04-02T00:06:32.753729+00:00",
+      "id": "relationship--1355595b-7bdf-4afd-a30f-2c3649bbb8b6",
+      "created": "2026-04-07T07:05:49.919201+00:00",
+      "modified": "2026-04-07T07:05:49.919203+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--362665cf-a386-4c8a-a5fc-e340320e72d8",
-      "target_ref": "attack-pattern--57078d38-0155-4326-a9c8-1bbbd4208728"
+      "source_ref": "indicator--f9729782-abf8-472b-b32f-77cfe439812e",
+      "target_ref": "attack-pattern--361da4e3-ade3-44c5-bd42-12cb007cae7e"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--c71d521f-fa09-40c9-aab8-77c5dcdd7338",
-      "created": "2026-04-02T00:06:32.753733+00:00",
-      "modified": "2026-04-02T00:06:32.753734+00:00",
+      "id": "relationship--a49d20bc-b614-45e7-b005-477def01029e",
+      "created": "2026-04-07T07:05:49.919208+00:00",
+      "modified": "2026-04-07T07:05:49.919209+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--91d913a7-b625-42d4-8635-1fe43e4ac42c",
-      "target_ref": "attack-pattern--73ee8496-88c0-4b57-88af-88a2cef172f1"
+      "source_ref": "indicator--f88a5426-4b0f-4e3d-bd41-d8aac525d5f2",
+      "target_ref": "attack-pattern--c7c5b180-f304-45b7-90eb-f2d267bb8ec2"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--a400f934-5d30-4d83-8edc-93efcc7dbba7",
-      "created": "2026-04-02T00:06:32.753739+00:00",
-      "modified": "2026-04-02T00:06:32.753740+00:00",
+      "id": "relationship--f58703ef-5a8a-418c-a3e9-0d76b8c875ce",
+      "created": "2026-04-07T07:05:49.919213+00:00",
+      "modified": "2026-04-07T07:05:49.919215+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--a4c215f9-ba4c-4af6-bebd-6348424482ce",
-      "target_ref": "attack-pattern--9b96884d-ec54-4b4b-b2d2-6e1a7b7b6d3b"
+      "source_ref": "indicator--59b38fc3-9c07-4be2-bc6c-dc19435499b7",
+      "target_ref": "attack-pattern--e9fef338-74c6-4ed7-9721-88a17b595a25"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--b6e261d3-55f3-4572-bdcc-78258a0dd165",
-      "created": "2026-04-02T00:06:32.753750+00:00",
-      "modified": "2026-04-02T00:06:32.753752+00:00",
+      "id": "relationship--426b9e6d-4982-4ad7-9e61-3567def5a1b8",
+      "created": "2026-04-07T07:05:49.919219+00:00",
+      "modified": "2026-04-07T07:05:49.919221+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--1445452a-764b-4b16-8ee8-1c68fe0a7d1e",
-      "target_ref": "attack-pattern--c29db731-f86e-40ce-a2a1-ae2560526db3"
+      "source_ref": "indicator--e4971965-c0f8-47b8-80f7-a7a89724641b",
+      "target_ref": "attack-pattern--4882ec7e-35a4-40cd-acef-d8b5f4825412"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--93e7034d-d719-469b-942b-8e826f503ad5",
-      "created": "2026-04-02T00:06:32.753758+00:00",
-      "modified": "2026-04-02T00:06:32.753760+00:00",
+      "id": "relationship--efc622a1-6ec9-4e40-8743-0c297657b1eb",
+      "created": "2026-04-07T07:05:49.919225+00:00",
+      "modified": "2026-04-07T07:05:49.919227+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--45901a2b-a9f9-4984-b4c9-a416665046a0",
-      "target_ref": "attack-pattern--e2eabb4f-5d19-4a2c-a8eb-1784ed9b2b4c"
+      "source_ref": "indicator--3e366288-0d66-4fe7-b233-924de1d493e2",
+      "target_ref": "attack-pattern--ac12172f-7fac-44e9-86d8-898fa08f2c78"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--37b3b6aa-0700-4c89-b838-c4f7f375051f",
-      "created": "2026-04-02T00:06:32.753764+00:00",
-      "modified": "2026-04-02T00:06:32.753766+00:00",
+      "id": "relationship--627a0920-8d81-4666-9c43-c4febaa3e8be",
+      "created": "2026-04-07T07:05:49.919231+00:00",
+      "modified": "2026-04-07T07:05:49.919233+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--4b0b4204-5e9e-4dc4-bb6a-8bbf43b6b343",
-      "target_ref": "attack-pattern--57078d38-0155-4326-a9c8-1bbbd4208728"
+      "source_ref": "indicator--cfdc834a-6061-4231-8f48-773ad6c5a359",
+      "target_ref": "attack-pattern--9fd85fdf-c088-4ced-8834-32df708150c5"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--a097e185-de2a-415d-ad26-ec1b18cb8085",
-      "created": "2026-04-02T00:06:32.753770+00:00",
-      "modified": "2026-04-02T00:06:32.753772+00:00",
+      "id": "relationship--329a2146-1dab-47ac-8e29-51d6236f6155",
+      "created": "2026-04-07T07:05:49.919237+00:00",
+      "modified": "2026-04-07T07:05:49.919239+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--4aaf70c4-ae43-4881-adab-82ed418f7334",
-      "target_ref": "attack-pattern--73ee8496-88c0-4b57-88af-88a2cef172f1"
+      "source_ref": "indicator--e9d49ae9-9a1f-4b4c-a943-7ca7ba1b4735",
+      "target_ref": "attack-pattern--d3be23b9-a439-4b23-b06d-c4b6fa74b266"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--3121c827-9495-49e0-8ddf-e2d3bad42fb4",
-      "created": "2026-04-02T00:06:32.753776+00:00",
-      "modified": "2026-04-02T00:06:32.753777+00:00",
+      "id": "relationship--71f2185b-fc4f-43eb-ac4c-752b8d3e8199",
+      "created": "2026-04-07T07:05:49.919246+00:00",
+      "modified": "2026-04-07T07:05:49.919248+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--7e1abb62-ba5e-4458-9c25-064a2462945b",
-      "target_ref": "attack-pattern--9b96884d-ec54-4b4b-b2d2-6e1a7b7b6d3b"
+      "source_ref": "indicator--a0f2df34-781d-4da1-978a-fe48958ccff2",
+      "target_ref": "attack-pattern--32f0d9ac-fcba-4b09-96f5-a15c9c7996bb"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--26ca4685-8104-4087-84fb-b0644fc11c39",
-      "created": "2026-04-02T00:06:32.753781+00:00",
-      "modified": "2026-04-02T00:06:32.753783+00:00",
+      "id": "relationship--13d69d57-5513-40b8-9966-a05402a72c69",
+      "created": "2026-04-07T07:05:49.919256+00:00",
+      "modified": "2026-04-07T07:05:49.919258+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--4af6bb1a-8369-4ac4-8fd1-c8120e8013a9",
-      "target_ref": "attack-pattern--c29db731-f86e-40ce-a2a1-ae2560526db3"
+      "source_ref": "indicator--a884c681-0bde-4333-92ea-55d7d6617009",
+      "target_ref": "attack-pattern--5f7167ed-9220-4cad-93d6-21872cba03b6"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--99e470c9-a1f3-4cc2-88c5-d92a9e113c3c",
-      "created": "2026-04-02T00:06:32.753787+00:00",
-      "modified": "2026-04-02T00:06:32.753788+00:00",
+      "id": "relationship--a3a359c8-41f8-474e-a979-087691c5e9f5",
+      "created": "2026-04-07T07:05:49.919268+00:00",
+      "modified": "2026-04-07T07:05:49.919270+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--d6c2445d-6de9-486d-8785-92c58b103082",
-      "target_ref": "attack-pattern--e2eabb4f-5d19-4a2c-a8eb-1784ed9b2b4c"
+      "source_ref": "indicator--db75e317-ac43-4a04-8bb1-94d48820a3b3",
+      "target_ref": "attack-pattern--fec61065-ca59-4920-9db8-d1b494872ff9"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--f32a3313-018f-46f3-9154-7de193866c71",
-      "created": "2026-04-02T00:06:32.753793+00:00",
-      "modified": "2026-04-02T00:06:32.753794+00:00",
+      "id": "relationship--0f406849-7468-4d2c-b415-164a5ec314b7",
+      "created": "2026-04-07T07:05:49.919275+00:00",
+      "modified": "2026-04-07T07:05:49.919277+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--80532896-aab9-4659-bbd5-eef3bb015877",
-      "target_ref": "attack-pattern--57078d38-0155-4326-a9c8-1bbbd4208728"
+      "source_ref": "indicator--5643f138-7053-4dc5-9378-0b3c539812ea",
+      "target_ref": "attack-pattern--a8578f6a-5b65-4816-910d-67adb5de7fef"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--adb426e5-d7c4-4f4e-ac95-e66e73e25ad8",
-      "created": "2026-04-02T00:06:32.753798+00:00",
-      "modified": "2026-04-02T00:06:32.753800+00:00",
+      "id": "relationship--0df70826-e0a2-4f0b-ae6f-14bad710adb3",
+      "created": "2026-04-07T07:05:49.919282+00:00",
+      "modified": "2026-04-07T07:05:49.919283+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--1c8a4ea0-5199-4813-93b3-53f40d7249a8",
-      "target_ref": "attack-pattern--73ee8496-88c0-4b57-88af-88a2cef172f1"
+      "source_ref": "indicator--b70d720f-f2a9-4f62-a970-5990239260e7",
+      "target_ref": "attack-pattern--11c9080b-4a4d-49f5-a65e-0404bc626559"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--527a475e-cc19-4c9e-b374-108714632986",
-      "created": "2026-04-02T00:06:32.753804+00:00",
-      "modified": "2026-04-02T00:06:32.753805+00:00",
+      "id": "relationship--6ec3acc5-bc39-40bb-b6e9-98a02b87df68",
+      "created": "2026-04-07T07:05:49.919287+00:00",
+      "modified": "2026-04-07T07:05:49.919289+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--df5eafa3-b992-428c-86e0-498e6ea3cad8",
-      "target_ref": "attack-pattern--9b96884d-ec54-4b4b-b2d2-6e1a7b7b6d3b"
+      "source_ref": "indicator--fddd5eba-fc84-4038-8c21-8187087390c9",
+      "target_ref": "attack-pattern--91836f08-2d6f-4159-a863-9aa8467f964b"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--b9aed907-c0ee-4e15-8aa3-cbfe15adea9a",
-      "created": "2026-04-02T00:06:32.753809+00:00",
-      "modified": "2026-04-02T00:06:32.753811+00:00",
+      "id": "relationship--1ad3f591-fe34-43f8-92aa-f80d179aaf7b",
+      "created": "2026-04-07T07:05:49.919293+00:00",
+      "modified": "2026-04-07T07:05:49.919315+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--989a151c-d1dc-4d46-977f-e2a802c3ef09",
-      "target_ref": "attack-pattern--c29db731-f86e-40ce-a2a1-ae2560526db3"
+      "source_ref": "indicator--df2711cf-712c-4ecf-9132-49a5281dd697",
+      "target_ref": "attack-pattern--59e1a37f-4641-4c0e-a28a-b342d8188fcd"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--241289a2-9c07-4f46-a3e7-518ea14fd187",
-      "created": "2026-04-02T00:06:32.753815+00:00",
-      "modified": "2026-04-02T00:06:32.753816+00:00",
+      "id": "relationship--a8903ab7-5de6-4d80-accb-bc40045964fc",
+      "created": "2026-04-07T07:05:49.919333+00:00",
+      "modified": "2026-04-07T07:05:49.919339+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--ab6e42ab-126c-43a4-bf26-3ea1687fae42",
-      "target_ref": "attack-pattern--e2eabb4f-5d19-4a2c-a8eb-1784ed9b2b4c"
+      "source_ref": "indicator--84f58459-fe2c-4236-bd29-b3b4987953c3",
+      "target_ref": "attack-pattern--955e5381-874c-438e-8168-7807a5dc8d8c"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--0eb0c0ca-2115-4a48-b5dc-74d3fa747823",
-      "created": "2026-04-02T00:06:32.753824+00:00",
-      "modified": "2026-04-02T00:06:32.753826+00:00",
+      "id": "relationship--a42f794d-eaff-424c-8ae9-797b92adb039",
+      "created": "2026-04-07T07:05:49.919355+00:00",
+      "modified": "2026-04-07T07:05:49.919358+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--5866a55d-3a19-4c5d-b441-4905e0bd7a70",
-      "target_ref": "attack-pattern--57078d38-0155-4326-a9c8-1bbbd4208728"
+      "source_ref": "indicator--2796ae81-fb27-48ee-83e4-0472ab467b90",
+      "target_ref": "attack-pattern--0a2acc25-ec31-44bf-a312-a896539f6c81"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--9386f3dc-e3f1-42a3-bf86-0b53f7b8ca75",
-      "created": "2026-04-02T00:06:32.753830+00:00",
-      "modified": "2026-04-02T00:06:32.753832+00:00",
+      "id": "relationship--2984eea2-f200-4862-8727-2fb3e442c50f",
+      "created": "2026-04-07T07:05:49.919364+00:00",
+      "modified": "2026-04-07T07:05:49.919365+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--7154ac33-239f-431f-8080-899664b57ea1",
-      "target_ref": "attack-pattern--73ee8496-88c0-4b57-88af-88a2cef172f1"
+      "source_ref": "indicator--1061e1d7-423b-42f9-9db8-63bd9bb90be4",
+      "target_ref": "attack-pattern--b66100fb-b01d-4c67-88a3-321f6bacee43"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--e3560f3f-0499-49a8-8a73-7b364e1e47e9",
-      "created": "2026-04-02T00:06:32.753836+00:00",
-      "modified": "2026-04-02T00:06:32.753837+00:00",
+      "id": "relationship--8514f2b4-25ab-4030-9db9-805aa5944b1a",
+      "created": "2026-04-07T07:05:49.919370+00:00",
+      "modified": "2026-04-07T07:05:49.919371+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--2b885a8f-4509-4f4b-bfd9-aa03bae07269",
-      "target_ref": "attack-pattern--9b96884d-ec54-4b4b-b2d2-6e1a7b7b6d3b"
+      "source_ref": "indicator--2ade25bd-c296-4033-b127-fb4f74444659",
+      "target_ref": "attack-pattern--85214c58-acfb-4b59-9b14-d90712603539"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--3b899b9f-8b20-44cc-b6e2-e7db32fe91c7",
-      "created": "2026-04-02T00:06:32.753841+00:00",
-      "modified": "2026-04-02T00:06:32.753843+00:00",
+      "id": "relationship--71bb3554-b0b6-46dc-b1cf-17fc5ce73661",
+      "created": "2026-04-07T07:05:49.919375+00:00",
+      "modified": "2026-04-07T07:05:49.919377+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--78565a6c-fa23-44ba-917f-fb8ebb1f06ca",
-      "target_ref": "attack-pattern--c29db731-f86e-40ce-a2a1-ae2560526db3"
+      "source_ref": "indicator--3cd5a50b-aba1-43cf-95f5-1cd977bf2c02",
+      "target_ref": "attack-pattern--dc93aef0-bdf0-479c-9223-eaed2ddde400"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--997b66a7-76dc-4724-882a-14bdbfa9e51f",
-      "created": "2026-04-02T00:06:32.753847+00:00",
-      "modified": "2026-04-02T00:06:32.753849+00:00",
+      "id": "relationship--b9fc79ac-a097-41e8-a690-f6d7f883df36",
+      "created": "2026-04-07T07:05:49.919381+00:00",
+      "modified": "2026-04-07T07:05:49.919383+00:00",
       "relationship_type": "indicates",
-      "source_ref": "indicator--7733f219-5fc3-4ecf-aa08-9b0072a680bd",
-      "target_ref": "attack-pattern--e2eabb4f-5d19-4a2c-a8eb-1784ed9b2b4c"
+      "source_ref": "indicator--c81cad1b-db0e-46cd-90f2-38d1b31c8f5f",
+      "target_ref": "attack-pattern--33ade4d3-c7b5-46c1-8158-19ed8c15e05c"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d3129638-2cb3-442f-8fa9-553c6f20a305",
+      "created": "2026-04-07T07:05:49.919388+00:00",
+      "modified": "2026-04-07T07:05:49.919389+00:00",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--e7b63bc2-26d1-4f13-964b-6310442e2399",
+      "target_ref": "attack-pattern--361da4e3-ade3-44c5-bd42-12cb007cae7e"
     }
   ]
 }
