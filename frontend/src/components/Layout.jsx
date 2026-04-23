@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
 import { Outlet, NavLink, useLocation } from 'react-router-dom'
-import { LayoutDashboard, Database, Shield, Settings, Activity, Menu, X } from 'lucide-react'
+import { LayoutDashboard, Database, Shield, Settings, Activity, Menu, X, Bot } from 'lucide-react'
 import { getHealth } from '../api/client'
 import Toast from './Toast'
 
 const navItems = [
     { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
+    { to: '/ai-analyst', icon: Bot, label: 'AI Analyst' },
     { to: '/indicators', icon: Database, label: 'Indicators' },
     { to: '/mitre', icon: Shield, label: 'MITRE ATT&CK' },
     { to: '/settings', icon: Settings, label: 'Settings' },

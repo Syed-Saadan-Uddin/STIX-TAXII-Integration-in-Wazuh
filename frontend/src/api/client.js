@@ -37,3 +37,11 @@ export const createFeed = (data) => api.post('/feeds', data)
 export const updateFeed = (id, data) => api.put(`/feeds/${id}`, data)
 export const deleteFeed = (id) => api.delete(`/feeds/${id}`)
 export const testFeedConnection = (data) => api.post('/feeds/test', data)
+
+// --- AI Analyst ---
+export const getAIStatus = () => api.get('/ai/status')
+export const enrichIndicator = (id) => api.post(`/ai/enrich/${id}`)
+export const chatWithAnalyst = (message, conversationHistory = null) =>
+    api.post('/ai/chat', { message, conversation_history: conversationHistory })
+export const triageAlert = (alertData, indicatorValue = null) =>
+    api.post('/ai/triage', { alert_data: alertData, indicator_value: indicatorValue })

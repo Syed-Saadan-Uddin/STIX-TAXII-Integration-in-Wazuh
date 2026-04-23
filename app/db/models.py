@@ -71,6 +71,8 @@ class Indicator(Base):
     last_seen = Column(DateTime, default=_utcnow)
     expires = Column(DateTime, nullable=True)
     is_active = Column(Boolean, default=True)
+    ai_summary = Column(Text, nullable=True)       # Cached Gemini analysis
+    ai_risk_score = Column(String, nullable=True)   # CRITICAL/HIGH/MEDIUM/LOW
 
     # Relationships
     source_feed = relationship("Feed", back_populates="indicators")

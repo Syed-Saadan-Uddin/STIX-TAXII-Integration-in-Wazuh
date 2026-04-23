@@ -10,11 +10,13 @@ services:
     volumes:
       - ./data:/app/data
       - ./logs:/app/logs
-      - wazuh_var_ossec:/var/ossec
+      - wazuh_etc:/var/ossec/etc
+      - wazuh_logs:/var/ossec/logs
     environment:
       - CONFIG_PATH=/app/config.yaml
       - ENCRYPTION_KEY=${ENCRYPTION_KEY}
       - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
     networks:
       - wazuh-net
     healthcheck:
@@ -24,9 +26,12 @@ services:
       retries: 3
 
 volumes:
-  wazuh_var_ossec:
+  wazuh_etc:
     external: true
-    name: single-node_wazuh_var_ossec # Match Wazuh Docker volume name
+    name: single-node_wazuh_etc # Match Wazuh 4.x Docker volume name
+  wazuh_logs:
+    external: true
+    name: single-node_wazuh_logs
 
 networks:
   wazuh-net:

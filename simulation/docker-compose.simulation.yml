@@ -1,14 +1,18 @@
-version: '3.8'
-
 services:
   # Wazuh Agent - ships simulated logs to Wazuh Manager
   wazuh-agent:
-    image: wazuh/wazuh-agent:4.7.0
+    image: wazuh/wazuh-agent:4.14.3
     container_name: wazuh-agent
     restart: unless-stopped
     environment:
-      - WAZUH_MANAGER=wazuh.manager
+      - WAZUH_MANAGER=172.22.0.3
+      - WAZUH_MANAGER_IP=172.22.0.3
+      - WAZUH_REGISTRATION_SERVER=172.22.0.3
       - WAZUH_AGENT_NAME=simulated-server-01
+      - WAZUH_REGISTRATION_PASSWORD=SecretPassword
+      - WAZUH_PROTOCOL=tcp
+      - WAZUH_PORT=1514
+      - WAZUH_REGISTRATION_PORT=1515
     volumes:
       - ./logs:/var/log/simulation   # Mount for injected log files
     networks:
@@ -35,3 +39,4 @@ services:
 networks:
   wazuh-net:
     external: true
+    name: single-node_default

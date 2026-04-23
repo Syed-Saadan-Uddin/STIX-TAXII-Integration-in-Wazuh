@@ -5,12 +5,9 @@
 
   <!-- Rule: IP found in Threat Intel CDB list -->
   <rule id="100001" level="12">
-    <if_sid>5710,5715,31103,31108</if_sid>
+    <if_group>syslog</if_group>
+    <description>Threat Intel: Malicious Indicator $(srcip) detected</description>
     <list field="srcip" lookup="match_key">etc/lists/threat_intel</list>
-    <description>Threat Intel: Source IP $(srcip) is a known malicious indicator</description>
-    <mitre>
-      <id>T1071</id>
-    </mitre>
     <group>threat_intel,malicious_ip,</group>
   </rule>
 

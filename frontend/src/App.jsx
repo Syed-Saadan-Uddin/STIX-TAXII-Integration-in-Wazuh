@@ -4,6 +4,7 @@ import Dashboard from './pages/Dashboard'
 import Indicators from './pages/Indicators'
 import MitreView from './pages/MitreView'
 import Settings from './pages/Settings'
+import AIAnalyst from './pages/AIAnalyst'
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     <Route path="/indicators" element={<Indicators />} />
                     <Route path="/mitre" element={<MitreView />} />
                     <Route path="/settings" element={<Settings />} />
+                    <Route path="/ai-analyst" element={<AIAnalyst />} />
                 </Route>
             </Routes>
         </BrowserRouter>
