@@ -28,13 +28,27 @@ with open(SEEDS_PATH, "r") as f:
 
 # MITRE ATT&CK techniques to seed
 TECHNIQUES = [
-    {"id": "T1059", "name": "Command and Scripting Interpreter", "tactic": "execution"},
     {"id": "T1071", "name": "Application Layer Protocol", "tactic": "command-and-control"},
+    {"id": "T1095", "name": "Non-Application Layer Protocol", "tactic": "command-and-control"},
+    {"id": "T1571", "name": "Non-Standard Port", "tactic": "command-and-control"},
+    {"id": "T1573", "name": "Encrypted Channel", "tactic": "command-and-control"},
     {"id": "T1566", "name": "Phishing", "tactic": "initial-access"},
     {"id": "T1190", "name": "Exploit Public-Facing Application", "tactic": "initial-access"},
     {"id": "T1078", "name": "Valid Accounts", "tactic": "defense-evasion"},
+    {"id": "T1133", "name": "External Remote Services", "tactic": "initial-access"},
+    {"id": "T1059", "name": "Command and Scripting Interpreter", "tactic": "execution"},
+    {"id": "T1203", "name": "Exploitation for Client Execution", "tactic": "execution"},
+    {"id": "T1053", "name": "Scheduled Task/Job", "tactic": "persistence"},
+    {"id": "T1136", "name": "Create Account", "tactic": "persistence"},
+    {"id": "T1027", "name": "Obfuscated Files or Information", "tactic": "defense-evasion"},
+    {"id": "T1562", "name": "Impair Defenses", "tactic": "defense-evasion"},
+    {"id": "T1110", "name": "Brute Force", "tactic": "credential-access"},
+    {"id": "T1555", "name": "Credentials from Password Stores", "tactic": "credential-access"},
+    {"id": "T1041", "name": "Exfiltration Over C2 Channel", "tactic": "exfiltration"},
+    {"id": "T1048", "name": "Exfiltration Over Alternative Protocol", "tactic": "exfiltration"},
+    {"id": "T1486", "name": "Data Encrypted for Impact", "tactic": "impact"},
+    {"id": "T1498", "name": "Network Denial of Service", "tactic": "impact"},
 ]
-
 # Helper: generate a STIX ID
 def stix_id(obj_type):
     return f"{obj_type}--{uuid.uuid4()}"

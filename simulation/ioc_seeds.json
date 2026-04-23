@@ -1,35 +1,38 @@
 {
-    "malicious_ips": [
-        "185.220.101.5",
-        "45.33.32.156",
-        "198.199.10.234",
-        "89.248.167.131",
-        "194.165.16.11",
-        "162.247.74.74",
-        "171.25.193.20",
-        "37.187.129.166",
-        "51.75.144.43",
-        "91.108.4.1"
-    ],
-    "malicious_domains": [
-        "evil-c2.net",
-        "malware-drop.xyz",
-        "phish-bank.com",
-        "trojan-loader.ru",
-        "botnet-ctrl.cc"
-    ],
-    "malicious_hashes": [
-        "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
-        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    ],
-    "benign_ips": [
-        "192.168.1.10",
-        "192.168.1.20",
-        "10.0.0.5",
-        "10.0.0.10",
-        "172.16.0.1",
-        "8.8.8.8",
-        "1.1.1.1",
-        "208.67.222.222"
-    ]
+  "malicious_ips": [
+    "83.142.209.203",
+    "212.71.124.188",
+    "83.142.209.11",
+    "23.142.184.129",
+    "45.148.10.212",
+    "209.34.235.18",
+    "63.251.162.11",
+    "195.5.171.242"
+  ],
+  "malicious_domains": [
+    "debianhacks.net",
+    "maccmsp.la",
+    "linuxdistro.net",
+    "ailyun-oss.com",
+    "almacensantangel.com",
+    "jsdclivr.com",
+    "aqyaqua.com",
+    "goyppg06.com",
+    "zybbzlast.com",
+    "clondflare.com"
+  ],
+  "malicious_hashes": [
+    "ae0de7034c4866556675740f6647bfcc",
+    "72c11e2df012ec603aee9ba7a0504bf1",
+    "d5edd791021b966fb6af0ace09319ace7b97d6642363ef27b3d5056ca654a94c",
+    "7b5cc85e82249b0c452c66563edca498ce9d0c70badef04ab2c52acef4d629ca",
+    "e6310d8a003d7ac101a6b1cd39ff6c6a88ee454b767c1bdce143e04bc1113243"
+  ],
+  "benign_ips": [
+    "192.168.1.10",
+    "192.168.1.20",
+    "10.0.0.5",
+    "8.8.8.8",
+    "1.1.1.1"
+  ]
 }

@@ -2,9 +2,9 @@ database:
   path: /app/data/wazuh_ti.db
 
 wazuh:
-  cdb_list_path: /var/ossec/etc/lists/threat_intel
-  reload_command: /var/ossec/bin/ossec-control reload
-  log_path: /var/ossec/logs/wazuh-ti.log
+  cdb_list_path: /app/data/threat_intel
+  reload_command: echo "CDB updated"
+  log_path: /app/logs/wazuh-ti.log
 
 scheduler:
   default_interval_minutes: 60
