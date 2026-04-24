@@ -11,12 +11,16 @@ services:
       - ./data:/app/data
       - ./logs:/app/logs
       - wazuh_etc:/var/ossec/etc
+      - wazuh_integrations:/var/ossec/integrations
       - wazuh_logs:/var/ossec/logs
     environment:
       - CONFIG_PATH=/app/config.yaml
       - ENCRYPTION_KEY=${ENCRYPTION_KEY}
       - LOG_LEVEL=${LOG_LEVEL:-INFO}
       - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - OTX_API_KEY=${OTX_API_KEY}
+      - ABUSE_CH_API_KEY=${ABUSE_CH_API_KEY}
+      - ABUSEIPDB_API_KEY=${ABUSEIPDB_API_KEY}
     networks:
       - wazuh-net
     healthcheck:
@@ -40,6 +44,42 @@ services:
     networks:
       - wazuh-net
 
+  wazuh-test-agent:
+    build:
+      context: ./simulation/wazuh-agent
+      args:
+        WAZUH_AGENT_VERSION: ${WAZUH_TEST_AGENT_VERSION:-4.8.0-1}
+    image: wazuh-ti-wazuh-test-agent:local
+    container_name: wazuh-test-agent
+    hostname: ${WAZUH_TEST_AGENT_NAME:-wazuh-test-agent}
+    restart: unless-stopped
+    environment:
+      - WAZUH_MANAGER_SERVER=${WAZUH_MANAGER_SERVER:-wazuh.manager}
+      - WAZUH_AGENT_NAME=${WAZUH_TEST_AGENT_NAME:-wazuh-test-agent}
+    volumes:
+      - ./simulation/wazuh-agent/ossec.conf:/etc/wazuh-test-agent/ossec.conf.template:ro
+      - wazuh_test_agent_logs:/var/log/wazuh-test
+    networks:
+      - wazuh-net
+
+  wazuh-test-alert-generator:
+    image: python:3.11-slim
+    container_name: wazuh-test-alert-generator
+    restart: unless-stopped
+    depends_on:
+      - wazuh-test-agent
+    working_dir: /app
+    command: ["python", "/app/generate_test_alerts.py"]
+    environment:
+      - ALERT_INTERVAL_SECONDS=${WAZUH_TEST_ALERT_INTERVAL_SECONDS:-30}
+      - ALERT_LOG_PATH=/var/log/wazuh-test/auth.log
+      - ALERT_HOSTNAME=${WAZUH_TEST_AGENT_NAME:-wazuh-test-agent}
+    volumes:
+      - ./simulation/wazuh-agent/generate_test_alerts.py:/app/generate_test_alerts.py:ro
+      - wazuh_test_agent_logs:/var/log/wazuh-test
+    networks:
+      - wazuh-net
+
 volumes:
   wazuh_etc:
     external: true
@@ -47,6 +87,10 @@ volumes:
   wazuh_logs:
     external: true
     name: single-node_wazuh_logs
+  wazuh_integrations:
+    external: true
+    name: single-node_wazuh_integrations
+  wazuh_test_agent_logs:
 
 networks:
   wazuh-net:

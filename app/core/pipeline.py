@@ -145,12 +145,12 @@ def _sync_feed(
         # Check feed type
         if feed.taxii_url.startswith("threatfox://"):
             from app.core.threatfox_client import ThreatFoxClient
-            api_key = feed.username
+            api_key = feed.username or config.threat_intel.abuse_ch_api_key
             tf_client = ThreatFoxClient(api_key)
             objects = tf_client.fetch_objects(days=1)
         elif feed.taxii_url.startswith("otx://"):
             from app.core.otx_client import OTXClient
-            api_key = feed.username
+            api_key = feed.username or config.threat_intel.otx_api_key
             otx_client = OTXClient(api_key)
             objects = otx_client.fetch_objects(limit=20)
         else:
@@ -267,13 +267,13 @@ def _sync_feed(
         summary["errors"].append(error_msg)
 
 
-def run_otx_sync(api_key: str) -> dict:
+def run_otx_sync(api_key: str | None = None) -> dict:
     """Sync directly from OTX API"""
     from app.core.otx_client import OTXClient
     
     db = SessionLocal()
     try:
-        client = OTXClient(api_key)
+        client = OTXClient(api_key or get_config().threat_intel.otx_api_key)
         objects = client.fetch_objects(limit=20)
         
         stix_parser = STIXParser()

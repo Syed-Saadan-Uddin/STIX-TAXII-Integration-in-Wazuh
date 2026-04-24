@@ -19,6 +19,8 @@ RUN cd frontend && npm install --legacy-peer-deps && npm run build
 
 # Copy app
 COPY app/ ./app/
+COPY scripts/ ./scripts/
+COPY wazuh-integrations/ ./wazuh-integrations/
 COPY config.yaml .
 
 # Create data and logs directories

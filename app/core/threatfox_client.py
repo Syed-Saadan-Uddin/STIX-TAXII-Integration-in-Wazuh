@@ -2,16 +2,20 @@
 ThreatFox (Abuse.ch) Direct API Client
 Fetches real threat intelligence - botnet C2, malware IOCs
 """
+import os
 import requests
 import uuid
 from datetime import datetime, timezone
+from app.env import load_env
 from app.utils.logger import get_logger
+
+load_env()
 
 logger = get_logger(__name__)
 
 class ThreatFoxClient:
-    def __init__(self, api_key: str):
-        self.api_key = api_key
+    def __init__(self, api_key: str | None = None):
+        self.api_key = api_key or os.environ.get("ABUSE_CH_API_KEY", "")
         self.base_url = "https://threatfox-api.abuse.ch/api/v1/"
         
         # Map ThreatFox threat types to MITRE techniques
@@ -58,7 +62,14 @@ class ThreatFoxClient:
             "warzone": {"id": "T1059", "name": "Command and Scripting Interpreter", "tactic": "execution"},
         }
 
+    @property
+    def is_configured(self) -> bool:
+        return bool(self.api_key)
+
     def fetch_objects(self, days: int = 1) -> list:
+        if not self.is_configured:
+            logger.warning("Skipping ThreatFox fetch: no abuse.ch API key configured")
+            return []
         try:
             logger.info("Fetching IOCs from ThreatFox (Abuse.ch)...")
             resp = requests.post(
@@ -171,6 +182,8 @@ class ThreatFoxClient:
         return objects
 
     def test_connection(self) -> bool:
+        if not self.is_configured:
+            return False
         try:
             resp = requests.post(
                 self.base_url,
@@ -181,3 +194,39 @@ class ThreatFoxClient:
             return resp.json().get("query_status") == "ok"
         except:
             return False
+
+    def search_ioc(self, indicator_value: str, indicator_type: str = "") -> dict:
+        """Search a single IOC in ThreatFox and return a compact summary."""
+        if not self.is_configured or not indicator_value:
+            return {"hits": 0, "status": "not_configured"}
+
+        query = "search_hash" if (indicator_type or "").lower() == "hash" else "search_ioc"
+        try:
+            resp = requests.post(
+                self.base_url,
+                headers={"Auth-Key": self.api_key, "Content-Type": "application/json"},
+                json={"query": query, "search_term": indicator_value},
+                timeout=2.5,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+            hits = data.get("data") or []
+            if not isinstance(hits, list):
+                hits = []
+            return {
+                "hits": len(hits),
+                "status": data.get("query_status", "unknown"),
+                "malware": list({
+                    hit.get("malware_printable")
+                    for hit in hits
+                    if hit.get("malware_printable")
+                })[:5],
+                "threat_types": list({
+                    hit.get("threat_type_desc")
+                    for hit in hits
+                    if hit.get("threat_type_desc")
+                })[:5],
+            }
+        except Exception as exc:
+            logger.warning(f"ThreatFox lookup failed for {indicator_value}: {exc}")
+            return {"hits": 0, "status": "error", "error": str(exc)}

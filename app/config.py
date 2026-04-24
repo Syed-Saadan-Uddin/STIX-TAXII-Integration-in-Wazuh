@@ -20,6 +20,10 @@ from typing import Optional
 import yaml
 from pydantic import BaseModel
 
+from app.env import load_env
+
+load_env()
+
 
 class DatabaseConfig(BaseModel):
     path: str = "./data/wazuh_ti.db"
@@ -50,6 +54,21 @@ class LoggingConfig(BaseModel):
     backup_count: int = 5
 
 
+class MLConfig(BaseModel):
+    enabled: bool = True
+    model_path: str = "./data/models/threat_predictor.pkl"
+    demo_seed_size: int = 12
+    lookback_hours: int = 24
+    default_host_criticality: int = 3
+    live_enrichment_enabled: bool = True
+
+
+class ThreatIntelConfig(BaseModel):
+    otx_api_key: Optional[str] = None
+    abuse_ch_api_key: Optional[str] = None
+    abuseipdb_api_key: Optional[str] = None
+
+
 class AppConfig(BaseModel):
     """Top-level application configuration."""
     database: DatabaseConfig = DatabaseConfig()
@@ -57,6 +76,8 @@ class AppConfig(BaseModel):
     scheduler: SchedulerConfig = SchedulerConfig()
     api: ApiConfig = ApiConfig()
     logging: LoggingConfig = LoggingConfig()
+    ml: MLConfig = MLConfig()
+    threat_intel: ThreatIntelConfig = ThreatIntelConfig()
 
 
 def _load_yaml(config_path: str) -> dict:
@@ -90,5 +111,22 @@ def get_config() -> AppConfig:
 
     if os.environ.get("API_KEY"):
         raw.setdefault("api", {})["api_key"] = os.environ["API_KEY"]
+
+    if os.environ.get("OTX_API_KEY"):
+        raw.setdefault("threat_intel", {})["otx_api_key"] = os.environ["OTX_API_KEY"]
+
+    if os.environ.get("ABUSE_CH_API_KEY"):
+        raw.setdefault("threat_intel", {})["abuse_ch_api_key"] = os.environ["ABUSE_CH_API_KEY"]
+
+    if os.environ.get("ABUSEIPDB_API_KEY"):
+        raw.setdefault("threat_intel", {})["abuseipdb_api_key"] = os.environ["ABUSEIPDB_API_KEY"]
+
+    if os.environ.get("ML_MODEL_PATH"):
+        raw.setdefault("ml", {})["model_path"] = os.environ["ML_MODEL_PATH"]
+
+    if os.environ.get("ML_LIVE_ENRICHMENT_ENABLED"):
+        raw.setdefault("ml", {})["live_enrichment_enabled"] = (
+            os.environ["ML_LIVE_ENRICHMENT_ENABLED"].lower() == "true"
+        )
 
     return AppConfig(**raw)

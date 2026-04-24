@@ -11,6 +11,11 @@ Provides:
 import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, DeclarativeBase
+from sqlalchemy.pool import StaticPool
+
+from app.env import load_env
+
+load_env()
 
 # Resolve database path — use env var or fallback to local dev path
 _db_path = os.environ.get("DATABASE_PATH", os.path.join(os.path.dirname(__file__), "..", "data", "wazuh_ti.db"))
@@ -21,7 +26,11 @@ SQLALCHEMY_DATABASE_URL = f"sqlite:///{os.path.abspath(_db_path)}"
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL,
-    connect_args={"check_same_thread": False},  # Required for SQLite
+    connect_args={
+        "check_same_thread": False,
+        "timeout": 30,
+    },
+    poolclass=StaticPool,
     echo=False,
 )
 

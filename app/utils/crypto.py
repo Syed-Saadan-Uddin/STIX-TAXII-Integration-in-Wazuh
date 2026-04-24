@@ -11,6 +11,10 @@ Generate a key with: python -c "from cryptography.fernet import Fernet; print(Fe
 import os
 from cryptography.fernet import Fernet, InvalidToken
 
+from app.env import load_env
+
+load_env()
+
 # Load or generate a key for development
 _key = os.environ.get("ENCRYPTION_KEY")
 if not _key:

@@ -16,6 +16,19 @@ api:
   api_key_enabled: false
   api_key: null
 
+ml:
+  enabled: true
+  model_path: /app/data/models/threat_predictor.pkl
+  demo_seed_size: 12
+  lookback_hours: 24
+  default_host_criticality: 3
+  live_enrichment_enabled: true
+
+threat_intel:
+  otx_api_key: null
+  abuse_ch_api_key: null
+  abuseipdb_api_key: null
+
 logging:
   level: INFO
   file: /app/logs/wazuh-ti.log

@@ -43,7 +43,7 @@ def ai_status():
     analyst = get_analyst()
     return {
         "available": analyst.is_available,
-        "model": "gemini-2.0-flash" if analyst.is_available else None,
+        "model": analyst.model_name if analyst.is_available else None,
         "features": ["enrichment", "chat", "triage"] if analyst.is_available else [],
     }
 

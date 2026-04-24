@@ -1,18 +1,21 @@
 """
 SQLAlchemy ORM models for the Wazuh-TI platform.
 
-Defines 5 tables:
+Defines core platform tables for:
 - feeds: TAXII feed configurations with encrypted credentials
 - indicators: Threat indicators (IPs, domains, URLs, hashes)
 - mitre_techniques: MITRE ATT&CK technique records
 - indicator_mitre_map: Many-to-many link between indicators and techniques
 - sync_log: Audit log for every synchronization attempt
+- host_asset_profiles: host criticality metadata for risk scoring
+- wazuh_alerts: ingested Wazuh alerts/events
+- threat_predictions: ML prediction outputs for each ingested alert
 """
 
 from datetime import datetime, timezone
 from sqlalchemy import (
     Column, Integer, String, Boolean, DateTime, ForeignKey,
-    UniqueConstraint, PrimaryKeyConstraint, Text,
+    UniqueConstraint, PrimaryKeyConstraint, Text, Float,
 )
 from sqlalchemy.orm import relationship
 from app.database import Base
@@ -147,3 +150,95 @@ class SyncLog(Base):
 
     def __repr__(self):
         return f"<SyncLog(id={self.id}, feed_id={self.feed_id}, status='{self.status}')>"
+
+
+class HostAssetProfile(Base):
+    """Optional host metadata used by the ML pipeline for criticality scoring."""
+
+    __tablename__ = "host_asset_profiles"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    host_name = Column(String, unique=True, nullable=False, index=True)
+    criticality = Column(Integer, default=3)  # 1-5
+    internet_exposed = Column(Boolean, default=False)
+    crown_jewel = Column(Boolean, default=False)
+    business_owner = Column(String, nullable=True)
+    notes = Column(Text, nullable=True)
+    created_at = Column(DateTime, default=_utcnow)
+    updated_at = Column(DateTime, default=_utcnow, onupdate=_utcnow)
+
+    alerts = relationship("WazuhAlert", back_populates="host_profile")
+
+    def __repr__(self):
+        return f"<HostAssetProfile(host_name='{self.host_name}', criticality={self.criticality})>"
+
+
+class WazuhAlert(Base):
+    """Normalized Wazuh alert record persisted for prediction and retraining."""
+
+    __tablename__ = "wazuh_alerts"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    wazuh_event_id = Column(String, unique=True, nullable=False, index=True)
+    alert_timestamp = Column(DateTime, default=_utcnow, index=True)
+    agent_id = Column(String, nullable=True, index=True)
+    host_name = Column(String, nullable=True, index=True)
+    rule_id = Column(String, nullable=True, index=True)
+    rule_level = Column(Integer, default=0)
+    rule_description = Column(Text, nullable=True)
+    source_ip = Column(String, nullable=True, index=True)
+    destination_ip = Column(String, nullable=True)
+    user_name = Column(String, nullable=True)
+    process_name = Column(String, nullable=True)
+    mitre_tactic = Column(String, nullable=True, index=True)
+    mitre_technique_id = Column(String, nullable=True)
+    mitre_technique_name = Column(String, nullable=True)
+    event_category = Column(String, nullable=True)
+    actual_incident = Column(Boolean, nullable=True)
+    analyst_label = Column(String, nullable=True)
+    raw_payload = Column(Text, nullable=False)
+    created_at = Column(DateTime, default=_utcnow)
+    host_profile_id = Column(Integer, ForeignKey("host_asset_profiles.id"), nullable=True)
+
+    host_profile = relationship("HostAssetProfile", back_populates="alerts")
+    prediction = relationship(
+        "ThreatPrediction",
+        back_populates="alert",
+        cascade="all, delete-orphan",
+        uselist=False,
+    )
+
+    def __repr__(self):
+        return f"<WazuhAlert(id={self.id}, rule_id='{self.rule_id}', host='{self.host_name}')>"
+
+
+class ThreatPrediction(Base):
+    """Current ML prediction snapshot for a Wazuh alert."""
+
+    __tablename__ = "threat_predictions"
+    __table_args__ = (
+        UniqueConstraint("alert_id", name="uq_threat_prediction_alert"),
+    )
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    alert_id = Column(Integer, ForeignKey("wazuh_alerts.id"), nullable=False, index=True)
+    model_name = Column(String, nullable=False)
+    model_version = Column(String, nullable=False)
+    threat_priority = Column(String, nullable=False, index=True)
+    risk_score = Column(Integer, nullable=False)
+    materialization_probability = Column(Float, nullable=False)
+    confidence_score = Column(Float, nullable=False)
+    recommended_action = Column(String, nullable=False)
+    predicted_next_attack_stage = Column(String, nullable=True)
+    top_factors = Column(Text, nullable=True)
+    feature_snapshot = Column(Text, nullable=True)
+    enrichment_summary = Column(Text, nullable=True)
+    created_at = Column(DateTime, default=_utcnow, index=True)
+
+    alert = relationship("WazuhAlert", back_populates="prediction")
+
+    def __repr__(self):
+        return (
+            f"<ThreatPrediction(alert_id={self.alert_id}, priority='{self.threat_priority}', "
+            f"risk_score={self.risk_score})>"
+        )

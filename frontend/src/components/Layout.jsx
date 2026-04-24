@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
 import { Outlet, NavLink, useLocation, Navigate } from 'react-router-dom'
-import { LayoutDashboard, Database, Shield, Settings, Activity, Menu, X, Bot, ExternalLink, Lock } from 'lucide-react'
+import { LayoutDashboard, Database, Shield, Settings, Activity, Menu, X, Bot, AlertTriangle, Lock } from 'lucide-react'
 import { getHealth } from '../api/client'
 import Toast from './Toast'
 
 const navItems = [
     { to: '/wazuh', icon: Shield, label: 'Wazuh SIEM' },
     { to: '/dashboard', icon: LayoutDashboard, label: 'TI Dashboard', locked: true },
+    { to: '/threat-prediction', icon: AlertTriangle, label: 'Threat Prediction', locked: true },
     { to: '/ai-analyst', icon: Bot, label: 'AI Analyst', locked: true },
     { to: '/indicators', icon: Database, label: 'Indicators', locked: true },
     { to: '/mitre', icon: Activity, label: 'MITRE Mapping', locked: true },

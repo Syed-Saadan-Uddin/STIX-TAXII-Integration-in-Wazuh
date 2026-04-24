@@ -225,7 +225,7 @@ export default function AIAnalyst() {
                         <h2 className="text-sm font-semibold text-text-primary">AI Threat Analyst</h2>
                         <p className="text-xs text-text-muted">
                             {aiStatus?.available
-                                ? `Powered by ${aiStatus.model} · ${aiStatus.features?.length || 0} capabilities`
+                                ? `${aiStatus.features?.length || 0} capabilities enabled`
                                 : 'Offline — no API key configured'}
                         </p>
                     </div>

@@ -11,14 +11,18 @@ This is the main application module that:
 
 import os
 from contextlib import asynccontextmanager
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from app.database import engine, Base
 from app.config import get_config
 from app.core.scheduler import SyncScheduler
 from app.core.pipeline import run_full_sync
+from app.env import load_env
 from app.utils.logger import get_logger
+
+load_env()
 
 logger = get_logger(__name__)
 
@@ -76,7 +80,7 @@ app.add_middleware(
 )
 
 # Register API routes
-from app.api.routes import indicators, feeds, mitre, sync, stats, ai, otx
+from app.api.routes import indicators, feeds, mitre, sync, stats, ai, otx, ml
 app.include_router(indicators.router, prefix="/api/v1")
 app.include_router(feeds.router, prefix="/api/v1")
 app.include_router(mitre.router, prefix="/api/v1")
@@ -84,10 +88,36 @@ app.include_router(sync.router, prefix="/api/v1")
 app.include_router(stats.router, prefix="/api/v1")
 app.include_router(ai.router, prefix="/api/v1")
 app.include_router(otx.router, prefix="/api/v1")
+app.include_router(ml.router, prefix="/api/v1")
 # Serve React frontend from built static files (production)
 _frontend_dist = os.path.join(os.path.dirname(__file__), "..", "frontend", "dist")
+
 if os.path.isdir(_frontend_dist):
-    app.mount("/", StaticFiles(directory=_frontend_dist, html=True), name="static")
-    logger.info(f"Serving frontend from {_frontend_dist}")
+    # Mount the assets directory specifically for JS/CSS
+    _assets_path = os.path.join(_frontend_dist, "assets")
+    if os.path.isdir(_assets_path):
+        app.mount("/assets", StaticFiles(directory=_assets_path), name="assets")
+    
+    # Catch-all route to serve index.html for any non-API route
+    # This enables React Router to handle deep links and page reloads
+    @app.get("/{rest_of_path:path}")
+    async def serve_frontend(rest_of_path: str):
+        # 1. If it starts with api/, it's a 404 for the API
+        if rest_of_path.startswith("api/"):
+            raise HTTPException(status_code=404, detail="API endpoint not found")
+        
+        # 2. Check if the requested path is a static file in the dist root (e.g., vite.svg, favicon.ico)
+        file_path = os.path.join(_frontend_dist, rest_of_path)
+        if os.path.isfile(file_path):
+            return FileResponse(file_path)
+        
+        # 3. Otherwise, serve index.html
+        index_path = os.path.join(_frontend_dist, "index.html")
+        if os.path.isfile(index_path):
+            return FileResponse(index_path)
+        
+        raise HTTPException(status_code=404, detail="Not Found")
+    
+    logger.info(f"Frontend catch-all route configured (dist: {_frontend_dist})")
 else:
     logger.info("Frontend dist not found — API-only mode (run frontend dev server separately)")

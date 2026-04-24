@@ -1,0 +1,76 @@
+#!/usr/bin/env python3
+"""
+Wazuh custom integration script for ML threat prediction ingestion.
+
+Arguments passed by Wazuh Integrator:
+1. Path to the alert file
+2. API key (optional)
+3. Hook URL (optional)
+"""
+
+from __future__ import annotations
+
+import json
+import os
+import sys
+import urllib.error
+import urllib.request
+from urllib.parse import urlparse
+
+DEFAULT_TIMEOUT = 10
+DEFAULT_ENDPOINT = "http://wazuh-ti:8000/api/v1/ml/alerts/ingest"
+
+
+def resolve_hook_url(raw_url: str | None) -> str:
+    if not raw_url:
+        return DEFAULT_ENDPOINT
+
+    parsed = urlparse(raw_url)
+    if parsed.scheme and parsed.netloc and parsed.path:
+        return raw_url
+    if parsed.scheme and parsed.netloc:
+        return raw_url.rstrip("/") + "/api/v1/ml/alerts/ingest"
+    return DEFAULT_ENDPOINT
+
+
+def main() -> int:
+    alert_file = sys.argv[1] if len(sys.argv) > 1 else ""
+    api_key = sys.argv[2] if len(sys.argv) > 2 else ""
+    hook_url = resolve_hook_url(sys.argv[3] if len(sys.argv) > 3 else "")
+
+    if not alert_file or not os.path.exists(alert_file):
+        print("Wazuh-TI ML integration: missing alert file", file=sys.stderr)
+        return 1
+
+    try:
+        with open(alert_file, "r", encoding="utf-8") as handle:
+            alert_json = json.load(handle)
+    except Exception as exc:
+        print(f"Wazuh-TI ML integration: failed to parse alert file: {exc}", file=sys.stderr)
+        return 1
+
+    headers = {"Content-Type": "application/json"}
+    if api_key:
+        headers["X-API-Key"] = api_key
+
+    payload = json.dumps({"alert_data": alert_json, "persist": True}).encode("utf-8")
+
+    try:
+        request = urllib.request.Request(
+            hook_url,
+            data=payload,
+            headers=headers,
+            method="POST",
+        )
+        with urllib.request.urlopen(request, timeout=DEFAULT_TIMEOUT) as response:
+            status_code = getattr(response, "status", response.getcode())
+            if int(status_code) >= 400:
+                raise RuntimeError(f"HTTP {status_code}")
+        return 0
+    except (urllib.error.URLError, urllib.error.HTTPError, Exception) as exc:
+        print(f"Wazuh-TI ML integration: delivery failed: {exc}", file=sys.stderr)
+        return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -11,6 +11,9 @@ from fastapi import Depends, HTTPException, Security, status
 from fastapi.security import APIKeyHeader
 from sqlalchemy.orm import Session
 from app.database import get_db as _get_db
+from app.env import load_env
+
+load_env()
 
 # Re-export the database session dependency
 get_db = _get_db

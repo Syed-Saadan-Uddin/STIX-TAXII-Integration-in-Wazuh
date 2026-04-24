@@ -306,6 +306,8 @@ def get_stats(db: Session) -> dict:
     expired = total - active
     mitre_count = db.query(func.count(MitreTechnique.id)).scalar() or 0
     feed_count = db.query(func.count(Feed.id)).scalar() or 0
+    active_feeds = db.query(func.count(Feed.id)).filter(Feed.is_active == True).scalar() or 0
+    inactive_feeds = feed_count - active_feeds
 
     # Last sync info
     last_log = (
@@ -323,6 +325,40 @@ def get_stats(db: Session) -> dict:
     )
     ioc_type_distribution = {t: c for t, c in type_dist}
 
+    confidence_bands = db.query(
+        func.sum(case((Indicator.confidence.is_(None), 1), else_=0)).label("unknown"),
+        func.sum(
+            case(
+                ((Indicator.confidence.is_not(None)) & (Indicator.confidence < 40), 1),
+                else_=0,
+            )
+        ).label("low"),
+        func.sum(
+            case(
+                (
+                    (Indicator.confidence.is_not(None))
+                    & (Indicator.confidence >= 40)
+                    & (Indicator.confidence < 70),
+                    1,
+                ),
+                else_=0,
+            )
+        ).label("medium"),
+        func.sum(case(((Indicator.confidence.is_not(None)) & (Indicator.confidence >= 70), 1), else_=0)).label("high"),
+    ).one()
+
+    feed_indicator_rows = (
+        db.query(
+            Feed.name,
+            func.count(Indicator.id).label("indicator_count"),
+        )
+        .outerjoin(Indicator, Feed.id == Indicator.source_feed_id)
+        .group_by(Feed.id, Feed.name)
+        .order_by(desc("indicator_count"), Feed.name.asc())
+        .limit(6)
+        .all()
+    )
+
     return {
         "total_indicators": total,
         "active_indicators": active,
@@ -333,6 +369,27 @@ def get_stats(db: Session) -> dict:
         "last_sync_status": last_log.status if last_log else None,
         "indicators_added_last_sync": last_log.indicators_added if last_log else 0,
         "ioc_type_distribution": ioc_type_distribution,
+        "indicator_status_distribution": {
+            "Active": active,
+            "Expired": expired,
+        },
+        "feed_status_distribution": {
+            "Active": active_feeds,
+            "Inactive": inactive_feeds,
+        },
+        "confidence_distribution": {
+            "Unknown": int(confidence_bands.unknown or 0),
+            "Low": int(confidence_bands.low or 0),
+            "Medium": int(confidence_bands.medium or 0),
+            "High": int(confidence_bands.high or 0),
+        },
+        "top_feeds_by_indicators": [
+            {
+                "name": name,
+                "indicator_count": count,
+            }
+            for name, count in feed_indicator_rows
+        ],
     }
 
 

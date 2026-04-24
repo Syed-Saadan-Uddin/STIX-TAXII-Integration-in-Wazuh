@@ -17,9 +17,12 @@ from typing import Optional
 import google.generativeai as genai
 from sqlalchemy.orm import Session
 
+from app.env import load_env
 from app.db.models import Indicator, MitreTechnique, IndicatorMitreMap, Feed, SyncLog
 from app.db import crud
 from app.utils.logger import get_logger
+
+load_env()
 
 logger = get_logger(__name__)
 
@@ -80,15 +83,16 @@ class AIAnalyst:
 
     def __init__(self, api_key: str | None = None):
         self.api_key = api_key or os.environ.get("GEMINI_API_KEY", "")
+        self.model_name = os.environ.get("GEMINI_MODEL", "gemini-3-flash-preview")
         self._configured = False
         self._model = None
 
         if self.api_key:
             try:
                 genai.configure(api_key=self.api_key)
-                self._model = genai.GenerativeModel("gemini-2.0-flash")
+                self._model = genai.GenerativeModel(self.model_name)
                 self._configured = True
-                logger.info("Gemini AI Analyst initialized successfully")
+                logger.info(f"Gemini AI Analyst initialized with {self.model_name}")
             except Exception as e:
                 logger.error(f"Failed to initialize Gemini: {e}")
         else:

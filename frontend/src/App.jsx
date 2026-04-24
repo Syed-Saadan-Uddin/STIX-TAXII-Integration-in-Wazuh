@@ -6,6 +6,7 @@ import MitreView from './pages/MitreView'
 import Settings from './pages/Settings'
 import AIAnalyst from './pages/AIAnalyst'
 import WazuhView from './pages/WazuhView'
+import ThreatPrediction from './pages/ThreatPrediction'
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     <Route path="/" element={<Navigate to="/wazuh" replace />} />
                     <Route path="/wazuh" element={<WazuhView />} />
                     <Route path="/dashboard" element={<Dashboard />} />
+                    <Route path="/threat-prediction" element={<ThreatPrediction />} />
                     <Route path="/indicators" element={<Indicators />} />
                     <Route path="/mitre" element={<MitreView />} />
                     <Route path="/settings" element={<Settings />} />

@@ -45,3 +45,20 @@ export const chatWithAnalyst = (message, conversationHistory = null) =>
     api.post('/ai/chat', { message, conversation_history: conversationHistory })
 export const triageAlert = (alertData, indicatorValue = null) =>
     api.post('/ai/triage', { alert_data: alertData, indicator_value: indicatorValue })
+
+// --- ML Threat Prediction ---
+export const getMLStatus = () => api.get('/ml/status')
+export const getMLOverview = () => api.get('/ml/overview')
+export const getMLPredictions = (params) => api.get('/ml/predictions', { params })
+export const getMLTopThreats = (params) => api.get('/ml/top-threats', { params })
+export const predictThreat = (alertData, persist = false) =>
+    api.post('/ml/predict', { alert_data: alertData, persist })
+export const ingestThreatAlert = (alertData) =>
+    api.post('/ml/alerts/ingest', { alert_data: alertData, persist: true })
+export const seedThreatPredictionDemo = (count = 12) =>
+    api.post('/ml/demo/seed', { count })
+export const retrainThreatModel = () => api.post('/ml/retrain')
+export const getHostProfiles = () => api.get('/ml/host-profiles')
+export const saveHostProfile = (data) => api.post('/ml/host-profiles', data)
+export const getWazuhMLIntegrationStatus = () => api.get('/ml/wazuh/status')
+export const installWazuhMLIntegration = (data = {}) => api.post('/ml/wazuh/install', data)

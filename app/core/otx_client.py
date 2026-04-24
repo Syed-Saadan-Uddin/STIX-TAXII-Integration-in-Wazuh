@@ -3,15 +3,20 @@ AlienVault OTX Direct API Client
 Fetches real threat intelligence from OTX REST API
 and converts to the same format as TAXII feeds
 """
+import os
 import requests
+from urllib.parse import quote
 from datetime import datetime, timezone
+from app.env import load_env
 from app.utils.logger import get_logger
+
+load_env()
 
 logger = get_logger(__name__)
 
 class OTXClient:
-    def __init__(self, api_key: str):
-        self.api_key = api_key
+    def __init__(self, api_key: str | None = None):
+        self.api_key = api_key or os.environ.get("OTX_API_KEY", "")
         self.base_url = "https://otx.alienvault.com/api/v1"
         self.headers = {"X-OTX-API-KEY": api_key}
         
@@ -55,9 +60,17 @@ class OTXClient:
             "xss": {"id": "T1189", "name": "Drive-by Compromise", "tactic": "initial-access"},
             "rce": {"id": "T1210", "name": "Exploitation of Remote Services", "tactic": "lateral-movement"},
         }
+        self.headers = {"X-OTX-API-KEY": self.api_key} if self.api_key else {}
+
+    @property
+    def is_configured(self) -> bool:
+        return bool(self.api_key)
 
     def fetch_objects(self, added_after=None, limit=10) -> list:
         """Fetch IOCs from OTX and convert to STIX-like format"""
+        if not self.is_configured:
+            logger.warning("Skipping OTX fetch: no OTX API key configured")
+            return []
         try:
             logger.info("Fetching pulses from AlienVault OTX...")
             resp = requests.get(
@@ -162,6 +175,8 @@ class OTXClient:
         return objects
 
     def test_connection(self) -> bool:
+        if not self.is_configured:
+            return False
         try:
             resp = requests.get(
                 f"{self.base_url}/user/me",
@@ -171,3 +186,54 @@ class OTXClient:
             return resp.status_code == 200
         except:
             return False
+
+    def lookup_indicator(self, indicator_value: str, indicator_type: str) -> dict:
+        """Lookup a single IOC in OTX and return a compact summary."""
+        if not self.is_configured or not indicator_value:
+            return {"hits": 0, "pulse_count": 0, "status": "not_configured"}
+
+        lookup_type = (indicator_type or "").lower()
+        encoded = quote(indicator_value, safe="")
+        paths: list[str]
+
+        if lookup_type == "ip":
+            paths = [f"/indicators/IPv4/{encoded}/general"]
+        elif lookup_type == "domain":
+            paths = [f"/indicators/hostname/{encoded}/general", f"/indicators/domain/{encoded}/general"]
+        elif lookup_type == "url":
+            paths = [f"/indicators/url/{encoded}/general"]
+        elif lookup_type == "hash":
+            paths = [f"/indicators/file/{encoded}/general"]
+        else:
+            return {"hits": 0, "pulse_count": 0, "status": "unsupported"}
+
+        for path in paths:
+            try:
+                resp = requests.get(
+                    f"{self.base_url}{path}",
+                    headers=self.headers,
+                    timeout=2.5,
+                )
+                if resp.status_code == 404:
+                    continue
+                resp.raise_for_status()
+                data = resp.json()
+                pulse_info = data.get("pulse_info") or {}
+                count = pulse_info.get("count", 0) or 0
+                pulse_names = [
+                    pulse.get("name")
+                    for pulse in (pulse_info.get("pulses") or [])[:5]
+                    if pulse.get("name")
+                ]
+                return {
+                    "hits": 1 if count else 0,
+                    "pulse_count": count,
+                    "pulse_names": pulse_names,
+                    "reputation": data.get("reputation"),
+                    "validation": data.get("validation"),
+                    "status": "ok",
+                }
+            except Exception as exc:
+                logger.warning(f"OTX lookup failed for {indicator_value}: {exc}")
+
+        return {"hits": 0, "pulse_count": 0, "status": "not_found"}
