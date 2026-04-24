@@ -1,0 +1,11 @@
+single-node_wazuh_etc
+single-node_wazuh_active_response
+single-node_wazuh_wodles
+single-node_filebeat_etc
+single-node_wazuh_api_configuration
+single-node_wazuh_integrations
+single-node_wazuh_logs
+single-node_wazuh_agentless
+single-node_filebeat_var
+single-node_wazuh_queue
+single-node_wazuh_var_multigroups

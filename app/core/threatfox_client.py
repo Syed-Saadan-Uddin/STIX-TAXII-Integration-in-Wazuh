@@ -13,6 +13,50 @@ class ThreatFoxClient:
     def __init__(self, api_key: str):
         self.api_key = api_key
         self.base_url = "https://threatfox-api.abuse.ch/api/v1/"
+        
+        # Map ThreatFox threat types to MITRE techniques
+        self.mitre_mapping = {
+            "botnet c2": {"id": "T1071", "name": "Application Layer Protocol", "tactic": "command-and-control"},
+            "payload delivery": {"id": "T1105", "name": "Ingress Tool Transfer", "tactic": "command-and-control"},
+            "information stealer": {"id": "T1005", "name": "Data from Local System", "tactic": "collection"},
+            "ransomware": {"id": "T1486", "name": "Data Encrypted for Impact", "tactic": "impact"},
+            "cryptominer": {"id": "T1496", "name": "Resource Hijacking", "tactic": "impact"},
+            "phishing": {"id": "T1566", "name": "Phishing", "tactic": "initial-access"},
+            "malware": {"id": "T1204", "name": "User Execution", "tactic": "execution"},
+            "backdoor": {"id": "T1059", "name": "Command and Scripting Interpreter", "tactic": "execution"},
+            "cobalt strike": {"id": "T1071.001", "name": "Web Protocols", "tactic": "command-and-control"},
+            "brute force": {"id": "T1110", "name": "Brute Force", "tactic": "credential-access"},
+            "keylogger": {"id": "T1056.001", "name": "Keylogging", "tactic": "collection"},
+            "dropper": {"id": "T1105", "name": "Ingress Tool Transfer", "tactic": "command-and-control"},
+            "exploit": {"id": "T1203", "name": "Exploitation for Client Execution", "tactic": "execution"},
+            "webshell": {"id": "T1505.003", "name": "Web Shell", "tactic": "persistence"},
+            "scanning": {"id": "T1595", "name": "Active Scanning", "tactic": "reconnaissance"},
+            "credential stealer": {"id": "T1555", "name": "Credentials from Password Stores", "tactic": "credential-access"},
+            "trojan": {"id": "T1059", "name": "Command and Scripting Interpreter", "tactic": "execution"},
+            "adware": {"id": "T1204.001", "name": "Malicious Link", "tactic": "execution"},
+            "emotet": {"id": "T1059", "name": "Command and Scripting Interpreter", "tactic": "execution"},
+            "trickbot": {"id": "T1071", "name": "Application Layer Protocol", "tactic": "command-and-control"},
+            "bazarloader": {"id": "T1105", "name": "Ingress Tool Transfer", "tactic": "command-and-control"},
+            "icedid": {"id": "T1071", "name": "Application Layer Protocol", "tactic": "command-and-control"},
+            "qakbot": {"id": "T1071", "name": "Application Layer Protocol", "tactic": "command-and-control"},
+            "agenttesla": {"id": "T1005", "name": "Data from Local System", "tactic": "collection"},
+            "formbook": {"id": "T1005", "name": "Data from Local System", "tactic": "collection"},
+            "redline": {"id": "T1555", "name": "Credentials from Password Stores", "tactic": "credential-access"},
+            "lokibot": {"id": "T1005", "name": "Data from Local System", "tactic": "collection"},
+            "ursnif": {"id": "T1071", "name": "Application Layer Protocol", "tactic": "command-and-control"},
+            "dridex": {"id": "T1071", "name": "Application Layer Protocol", "tactic": "command-and-control"},
+            "guloader": {"id": "T1105", "name": "Ingress Tool Transfer", "tactic": "command-and-control"},
+            "remcos": {"id": "T1059", "name": "Command and Scripting Interpreter", "tactic": "execution"},
+            "njrat": {"id": "T1059", "name": "Command and Scripting Interpreter", "tactic": "execution"},
+            "nanocore": {"id": "T1059", "name": "Command and Scripting Interpreter", "tactic": "execution"},
+            "asyncrat": {"id": "T1059", "name": "Command and Scripting Interpreter", "tactic": "execution"},
+            "raccoon": {"id": "T1005", "name": "Data from Local System", "tactic": "collection"},
+            "vidar": {"id": "T1005", "name": "Data from Local System", "tactic": "collection"},
+            "smokeloader": {"id": "T1105", "name": "Ingress Tool Transfer", "tactic": "command-and-control"},
+            "danabot": {"id": "T1071", "name": "Application Layer Protocol", "tactic": "command-and-control"},
+            "avemaria": {"id": "T1059", "name": "Command and Scripting Interpreter", "tactic": "execution"},
+            "warzone": {"id": "T1059", "name": "Command and Scripting Interpreter", "tactic": "execution"},
+        }
 
     def fetch_objects(self, days: int = 1) -> list:
         try:
@@ -35,11 +79,11 @@ class ThreatFoxClient:
 
             objects = []
             for ioc in iocs:
-                stix_obj = self._to_stix(ioc)
-                if stix_obj:
-                    objects.append(stix_obj)
+                stix_objects = self._to_stix(ioc)
+                if stix_objects:
+                    objects.extend(stix_objects)
 
-            logger.info(f"Converted {len(objects)} ThreatFox IOCs to STIX format")
+            logger.info(f"Converted ThreatFox IOCs to {len(objects)} STIX objects (including mappings)")
             return objects
 
         except Exception as e:
@@ -67,11 +111,14 @@ class ThreatFoxClient:
 
         malware = ioc.get("malware_printable", "Unknown")
         threat_type = ioc.get("threat_type_desc", "")
+        
+        objects = []
+        indicator_id = f"indicator--{uuid.uuid4()}"
 
-        return {
+        indicator_obj = {
             "type": "indicator",
             "spec_version": "2.1",
-            "id": f"indicator--{uuid.uuid4()}",
+            "id": indicator_id,
             "created": datetime.now(timezone.utc).isoformat(),
             "modified": datetime.now(timezone.utc).isoformat(),
             "name": f"ThreatFox: {malware} - {threat_type[:50]}",
@@ -81,6 +128,47 @@ class ThreatFoxClient:
             "confidence": confidence,
             "labels": ["malicious-activity", "threat-fox"],
         }
+        objects.append(indicator_obj)
+
+        # Map to MITRE technique if threat_type matches
+        threat_type_lower = threat_type.lower()
+        mapped_technique = None
+        
+        for key, tech in self.mitre_mapping.items():
+            if key in threat_type_lower or key in malware.lower():
+                mapped_technique = tech
+                break
+                
+        if mapped_technique:
+            ap_id = f"attack-pattern--{uuid.uuid4()}"
+            attack_pattern = {
+                "type": "attack-pattern",
+                "id": ap_id,
+                "name": mapped_technique["name"],
+                "external_references": [
+                    {
+                        "source_name": "mitre-attack",
+                        "external_id": mapped_technique["id"]
+                    }
+                ],
+                "kill_chain_phases": [
+                    {
+                        "kill_chain_name": "mitre-attack",
+                        "phase_name": mapped_technique["tactic"]
+                    }
+                ]
+            }
+            relationship = {
+                "type": "relationship",
+                "id": f"relationship--{uuid.uuid4()}",
+                "relationship_type": "indicates",
+                "source_ref": indicator_id,
+                "target_ref": ap_id
+            }
+            objects.append(attack_pattern)
+            objects.append(relationship)
+
+        return objects
 
     def test_connection(self) -> bool:
         try:

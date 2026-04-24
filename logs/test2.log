@@ -1,0 +1,1000 @@
+Apr 23 22:50:19 webserver-3 named[19648]: query: almacensantangel.com IN A + (83.142.209.11)
+Apr 23 22:50:19 webserver-1 named[19440]: query: stackoverflow.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 apache2[2348]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 404 35573
+Apr 23 22:50:19 webserver-2 apache2[2240]: 212.71.124.188 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 12515
+Apr 23 22:50:19 webserver-2 sshd[41771]: Failed password for admin from 192.168.1.20 port 39948 ssh2
+Apr 23 22:50:19 webserver-1 named[64573]: query: reddit.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[20141]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 500 31724
+Apr 23 22:50:19 webserver-1 apache2[37621]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 500 435
+Apr 23 22:50:19 webserver-3 named[36455]: query: microsoft.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-2 apache2[23760]: 63.251.162.11 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 200 41237
+Apr 23 22:50:19 webserver-1 named[39654]: query: microsoft.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 apache2[27324]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 2817
+Apr 23 22:50:19 webserver-2 apache2[43566]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 500 23536
+Apr 23 22:50:19 webserver-1 apache2[40570]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 200 6067
+Apr 23 22:50:19 webserver-3 sshd[32058]: Failed password for root from 8.8.8.8 port 15356 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=212.71.124.188 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[47552]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 200 41067
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[27256]: query: github.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=45.148.10.212 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[60901]: Failed password for root from 192.168.1.20 port 52154 ssh2
+Apr 23 22:50:19 webserver-2 sshd[37382]: Failed password for ubuntu from 8.8.8.8 port 13353 ssh2
+Apr 23 22:50:19 webserver-3 sshd[35898]: Failed password for ec2-user from 83.142.209.11 port 29397 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[29695]: 83.142.209.203 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 500 41284
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=195.5.171.242 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[13427]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 500 33259
+Apr 23 22:50:19 webserver-1 apache2[50068]: 23.142.184.129 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 403 29780
+Apr 23 22:50:19 webserver-1 named[16576]: query: github.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-1 sshd[30335]: Failed password for admin from 45.148.10.212 port 33495 ssh2
+Apr 23 22:50:19 webserver-1 apache2[51703]: 192.168.1.10 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 200 25876
+Apr 23 22:50:19 webserver-2 apache2[62259]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 1294
+Apr 23 22:50:19 webserver-2 named[43016]: query: reddit.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-1 named[35266]: query: cloudflare.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-1 apache2[18252]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 404 13233
+Apr 23 22:50:19 webserver-3 named[53077]: query: github.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 named[27681]: query: amazon.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[24073]: query: jsdclivr.com IN A + (83.142.209.11)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[19543]: Failed password for root from 192.168.1.20 port 39680 ssh2
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[37563]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 404 45071
+Apr 23 22:50:19 webserver-2 sshd[24232]: Failed password for root from 8.8.8.8 port 34157 ssh2
+Apr 23 22:50:19 webserver-3 named[22742]: query: cloudflare.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-1 sshd[3328]: Failed password for admin from 1.1.1.1 port 48140 ssh2
+Apr 23 22:50:19 webserver-1 apache2[47301]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 30669
+Apr 23 22:50:19 webserver-1 sshd[24616]: Failed password for root from 192.168.1.20 port 9486 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=83.142.209.203 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[2568]: 192.168.1.20 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 404 5792
+Apr 23 22:50:19 webserver-2 apache2[49809]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 404 1983
+Apr 23 22:50:19 webserver-3 sshd[30263]: Failed password for ec2-user from 209.34.235.18 port 44012 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[36193]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 47436
+Apr 23 22:50:19 webserver-3 named[36249]: query: amazon.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[11116]: Failed password for ubuntu from 192.168.1.10 port 8781 ssh2
+Apr 23 22:50:19 webserver-3 apache2[9351]: 212.71.124.188 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 7168
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[56711]: 23.142.184.129 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 500 4161
+Apr 23 22:50:19 webserver-2 sshd[22296]: Failed password for admin from 8.8.8.8 port 60270 ssh2
+Apr 23 22:50:19 webserver-2 named[20464]: query: stackoverflow.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-3 sshd[28837]: Failed password for admin from 8.8.8.8 port 58403 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[34099]: Failed password for root from 192.168.1.20 port 35561 ssh2
+Apr 23 22:50:19 webserver-2 named[1144]: query: jsdclivr.com IN A + (45.148.10.212)
+Apr 23 22:50:19 webserver-3 apache2[26948]: 1.1.1.1 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 200 5896
+Apr 23 22:50:19 webserver-3 sshd[37924]: Failed password for ubuntu from 1.1.1.1 port 18372 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=209.34.235.18 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[32106]: Failed password for ec2-user from 8.8.8.8 port 53702 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[35355]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 200 44349
+Apr 23 22:50:19 webserver-2 sshd[64781]: Failed password for ec2-user from 192.168.1.10 port 19136 ssh2
+Apr 23 22:50:19 webserver-2 apache2[31594]: 1.1.1.1 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 404 21659
+Apr 23 22:50:19 webserver-3 named[28703]: query: stackoverflow.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[20238]: Failed password for ubuntu from 8.8.8.8 port 8939 ssh2
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[1390]: Failed password for root from 8.8.8.8 port 32956 ssh2
+Apr 23 22:50:19 webserver-2 named[46915]: query: stackoverflow.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-3 sshd[8742]: Failed password for ec2-user from 8.8.8.8 port 62275 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[13185]: query: aqyaqua.com IN A + (212.71.124.188)
+Apr 23 22:50:19 webserver-3 sshd[50329]: Failed password for root from 10.0.0.5 port 56448 ssh2
+Apr 23 22:50:19 webserver-3 sshd[48945]: Failed password for ec2-user from 10.0.0.5 port 45845 ssh2
+Apr 23 22:50:19 webserver-2 named[11640]: query: debianhacks.net IN A + (83.142.209.11)
+Apr 23 22:50:19 webserver-1 named[46617]: query: reddit.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[37907]: query: github.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[47023]: 1.1.1.1 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 500 30692
+Apr 23 22:50:19 webserver-2 sshd[21276]: Failed password for root from 192.168.1.20 port 61704 ssh2
+Apr 23 22:50:19 webserver-1 named[48586]: query: reddit.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 named[60492]: query: ailyun-oss.com IN A + (63.251.162.11)
+Apr 23 22:50:19 webserver-2 named[40288]: query: stackoverflow.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[33366]: query: google.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=63.251.162.11 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[15100]: query: reddit.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-2 apache2[42813]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 403 7225
+Apr 23 22:50:19 webserver-2 named[64938]: query: goyppg06.com IN A + (209.34.235.18)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[27003]: query: github.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[15638]: query: microsoft.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-3 named[33298]: query: github.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-1 named[39603]: query: wikipedia.org IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-1 sshd[31345]: Failed password for root from 8.8.8.8 port 49565 ssh2
+Apr 23 22:50:19 webserver-1 apache2[56512]: 45.148.10.212 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 404 22808
+Apr 23 22:50:19 webserver-2 named[54706]: query: amazon.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[32882]: Failed password for ubuntu from 192.168.1.10 port 51969 ssh2
+Apr 23 22:50:19 webserver-1 named[3348]: query: goyppg06.com IN A + (63.251.162.11)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[57955]: query: aqyaqua.com IN A + (83.142.209.203)
+Apr 23 22:50:19 webserver-2 named[38625]: query: google.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-3 named[43775]: query: stackoverflow.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-3 named[59285]: query: cloudflare.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-2 sshd[21147]: Failed password for root from 192.168.1.20 port 10559 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=195.5.171.242 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[48184]: Failed password for admin from 63.251.162.11 port 61132 ssh2
+Apr 23 22:50:19 webserver-1 sshd[57636]: Failed password for ec2-user from 1.1.1.1 port 54858 ssh2
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[40842]: 23.142.184.129 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 403 22251
+Apr 23 22:50:19 webserver-2 sshd[9302]: Failed password for ec2-user from 8.8.8.8 port 32891 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=63.251.162.11 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[24253]: Failed password for root from 10.0.0.5 port 28442 ssh2
+Apr 23 22:50:19 webserver-2 apache2[46896]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 14012
+Apr 23 22:50:19 webserver-1 apache2[59495]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 4899
+Apr 23 22:50:19 webserver-1 named[24740]: query: cloudflare.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=195.5.171.242 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[19244]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 403 10140
+Apr 23 22:50:19 webserver-3 named[38614]: query: google.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-2 sshd[43551]: Failed password for ec2-user from 63.251.162.11 port 26958 ssh2
+Apr 23 22:50:19 webserver-1 sshd[11767]: Failed password for ec2-user from 10.0.0.5 port 48418 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=83.142.209.203 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[12627]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 200 1363
+Apr 23 22:50:19 webserver-3 sshd[42774]: Failed password for ubuntu from 192.168.1.20 port 51827 ssh2
+Apr 23 22:50:19 webserver-1 apache2[15574]: 1.1.1.1 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 404 49146
+Apr 23 22:50:19 webserver-2 apache2[58415]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 403 4065
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[2954]: query: almacensantangel.com IN A + (83.142.209.203)
+Apr 23 22:50:19 webserver-1 apache2[53027]: 83.142.209.11 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 404 8175
+Apr 23 22:50:19 webserver-1 apache2[17416]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 35983
+Apr 23 22:50:19 webserver-1 sshd[59469]: Failed password for ec2-user from 8.8.8.8 port 60502 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=83.142.209.203 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=83.142.209.203 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[9547]: Failed password for admin from 8.8.8.8 port 8234 ssh2
+Apr 23 22:50:19 webserver-3 named[22595]: query: cloudflare.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[33564]: Failed password for admin from 10.0.0.5 port 14684 ssh2
+Apr 23 22:50:19 webserver-1 sshd[29556]: Failed password for ec2-user from 63.251.162.11 port 35770 ssh2
+Apr 23 22:50:19 webserver-3 named[24537]: query: amazon.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 apache2[26619]: 192.168.1.20 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 403 23383
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[7131]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 404 5133
+Apr 23 22:50:19 webserver-2 sshd[63736]: Failed password for admin from 10.0.0.5 port 3547 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=209.34.235.18 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[28574]: Failed password for admin from 192.168.1.10 port 42090 ssh2
+Apr 23 22:50:19 webserver-1 sshd[47243]: Failed password for root from 1.1.1.1 port 50369 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[38244]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 403 34604
+Apr 23 22:50:19 webserver-3 apache2[53845]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 403 21628
+Apr 23 22:50:19 webserver-1 sshd[18041]: Failed password for admin from 192.168.1.10 port 18863 ssh2
+Apr 23 22:50:19 webserver-1 sshd[22960]: Failed password for ubuntu from 8.8.8.8 port 34329 ssh2
+Apr 23 22:50:19 webserver-1 apache2[48822]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 500 21043
+Apr 23 22:50:19 webserver-3 named[62493]: query: clondflare.com IN A + (83.142.209.203)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[55573]: query: stackoverflow.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 apache2[18870]: 10.0.0.5 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 403 19004
+Apr 23 22:50:19 webserver-2 named[19530]: query: wikipedia.org IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-1 apache2[21789]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 200 23003
+Apr 23 22:50:19 webserver-2 sshd[26101]: Failed password for admin from 10.0.0.5 port 59757 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[44230]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 403 37275
+Apr 23 22:50:19 webserver-2 apache2[15266]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 47482
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[31494]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 404 24664
+Apr 23 22:50:19 webserver-2 sshd[65146]: Failed password for ec2-user from 192.168.1.10 port 63030 ssh2
+Apr 23 22:50:19 webserver-1 named[22978]: query: goyppg06.com IN A + (23.142.184.129)
+Apr 23 22:50:19 webserver-2 apache2[42735]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 8448
+Apr 23 22:50:19 webserver-1 named[38106]: query: wikipedia.org IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[28752]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 500 18022
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[31230]: 45.148.10.212 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 200 28052
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[16787]: Failed password for admin from 192.168.1.20 port 48485 ssh2
+Apr 23 22:50:19 webserver-1 named[24247]: query: maccmsp.la IN A + (209.34.235.18)
+Apr 23 22:50:19 webserver-3 sshd[8343]: Failed password for ec2-user from 192.168.1.20 port 22846 ssh2
+Apr 23 22:50:19 webserver-3 apache2[54462]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 32672
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[47454]: query: stackoverflow.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[54855]: query: cloudflare.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-2 apache2[62599]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 403 11110
+Apr 23 22:50:19 webserver-3 named[10663]: query: github.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-2 named[2595]: query: google.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-2 apache2[10968]: 23.142.184.129 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 500 765
+Apr 23 22:50:19 webserver-1 named[1352]: query: google.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[52102]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 31828
+Apr 23 22:50:19 webserver-3 apache2[64382]: 209.34.235.18 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 404 9552
+Apr 23 22:50:19 webserver-1 apache2[63386]: 63.251.162.11 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 39307
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=63.251.162.11 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[26942]: Failed password for root from 1.1.1.1 port 7250 ssh2
+Apr 23 22:50:19 webserver-2 apache2[50736]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 18244
+Apr 23 22:50:19 webserver-1 apache2[10691]: 23.142.184.129 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 36787
+Apr 23 22:50:19 webserver-1 named[49887]: query: google.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 sshd[35632]: Failed password for ubuntu from 192.168.1.10 port 47933 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[38346]: Failed password for ubuntu from 1.1.1.1 port 20731 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[15938]: query: cloudflare.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-3 apache2[16830]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 403 47419
+Apr 23 22:50:19 webserver-3 named[61024]: query: aqyaqua.com IN A + (83.142.209.11)
+Apr 23 22:50:19 webserver-2 apache2[1192]: 192.168.1.10 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 404 25393
+Apr 23 22:50:19 webserver-2 named[8711]: query: stackoverflow.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-3 apache2[64765]: 8.8.8.8 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 500 42247
+Apr 23 22:50:19 webserver-3 sshd[43976]: Failed password for admin from 209.34.235.18 port 6214 ssh2
+Apr 23 22:50:19 webserver-3 sshd[54663]: Failed password for ubuntu from 192.168.1.10 port 21627 ssh2
+Apr 23 22:50:19 webserver-2 named[38817]: query: debianhacks.net IN A + (63.251.162.11)
+Apr 23 22:50:19 webserver-3 sshd[11190]: Failed password for admin from 10.0.0.5 port 50406 ssh2
+Apr 23 22:50:19 webserver-2 sshd[19469]: Failed password for ec2-user from 10.0.0.5 port 2410 ssh2
+Apr 23 22:50:19 webserver-2 sshd[31662]: Failed password for ec2-user from 212.71.124.188 port 41588 ssh2
+Apr 23 22:50:19 webserver-1 apache2[7207]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 404 15235
+Apr 23 22:50:19 webserver-2 named[3418]: query: zybbzlast.com IN A + (195.5.171.242)
+Apr 23 22:50:19 webserver-1 named[47604]: query: clondflare.com IN A + (83.142.209.11)
+Apr 23 22:50:19 webserver-2 named[35050]: query: amazon.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[59973]: query: stackoverflow.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-1 named[22024]: query: google.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 named[40640]: query: microsoft.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-3 named[45251]: query: github.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-3 named[9170]: query: linuxdistro.net IN A + (63.251.162.11)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[59878]: query: github.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-2 sshd[39309]: Failed password for admin from 1.1.1.1 port 21959 ssh2
+Apr 23 22:50:19 webserver-1 sshd[19348]: Failed password for ubuntu from 209.34.235.18 port 12754 ssh2
+Apr 23 22:50:19 webserver-3 sshd[6327]: Failed password for admin from 195.5.171.242 port 36628 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[44969]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 30548
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[56899]: query: amazon.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-1 apache2[26471]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 500 11875
+Apr 23 22:50:19 webserver-2 sshd[55689]: Failed password for admin from 10.0.0.5 port 13161 ssh2
+Apr 23 22:50:19 webserver-1 apache2[6172]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 404 43087
+Apr 23 22:50:19 webserver-1 apache2[53546]: 192.168.1.20 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 500 37415
+Apr 23 22:50:19 webserver-3 named[40056]: query: stackoverflow.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[62289]: Failed password for ubuntu from 83.142.209.203 port 63122 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=195.5.171.242 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[64827]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 11381
+Apr 23 22:50:19 webserver-1 apache2[15885]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 500 20154
+Apr 23 22:50:19 webserver-3 sshd[44970]: Failed password for root from 192.168.1.10 port 33873 ssh2
+Apr 23 22:50:19 webserver-1 sshd[44374]: Failed password for root from 192.168.1.20 port 13018 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[62667]: query: stackoverflow.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-1 sshd[36829]: Failed password for ubuntu from 192.168.1.10 port 14462 ssh2
+Apr 23 22:50:19 webserver-1 sshd[62506]: Failed password for root from 10.0.0.5 port 28530 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[20993]: Failed password for ubuntu from 10.0.0.5 port 6801 ssh2
+Apr 23 22:50:19 webserver-2 apache2[52577]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 12218
+Apr 23 22:50:19 webserver-1 sshd[39294]: Failed password for ubuntu from 192.168.1.20 port 53915 ssh2
+Apr 23 22:50:19 webserver-2 named[10334]: query: reddit.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-1 named[56124]: query: reddit.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 sshd[62687]: Failed password for ec2-user from 1.1.1.1 port 63522 ssh2
+Apr 23 22:50:19 webserver-2 apache2[43815]: 45.148.10.212 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 500 46390
+Apr 23 22:50:19 webserver-1 named[2914]: query: stackoverflow.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-1 apache2[35687]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 500 8542
+Apr 23 22:50:19 webserver-1 named[22640]: query: stackoverflow.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-2 apache2[40499]: 10.0.0.5 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 200 6812
+Apr 23 22:50:19 webserver-2 sshd[3122]: Failed password for ec2-user from 1.1.1.1 port 35263 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=212.71.124.188 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[4600]: query: github.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-3 named[22513]: query: microsoft.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-3 apache2[28760]: 23.142.184.129 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 200 44015
+Apr 23 22:50:19 webserver-2 sshd[32380]: Failed password for root from 8.8.8.8 port 20552 ssh2
+Apr 23 22:50:19 webserver-1 sshd[58547]: Failed password for ubuntu from 192.168.1.10 port 56915 ssh2
+Apr 23 22:50:19 webserver-2 named[60610]: query: aqyaqua.com IN A + (195.5.171.242)
+Apr 23 22:50:19 webserver-3 named[33736]: query: google.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-2 sshd[62846]: Failed password for admin from 63.251.162.11 port 10843 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=209.34.235.18 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=63.251.162.11 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[50675]: query: wikipedia.org IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[11723]: query: stackoverflow.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-1 apache2[52163]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 45706
+Apr 23 22:50:19 webserver-3 named[27473]: query: reddit.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-3 sshd[20577]: Failed password for admin from 8.8.8.8 port 55659 ssh2
+Apr 23 22:50:19 webserver-2 apache2[65372]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 403 21164
+Apr 23 22:50:19 webserver-1 apache2[22329]: 63.251.162.11 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 500 14505
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[48707]: Failed password for ubuntu from 192.168.1.10 port 41171 ssh2
+Apr 23 22:50:19 webserver-2 named[4090]: query: cloudflare.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=63.251.162.11 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[26780]: query: zybbzlast.com IN A + (63.251.162.11)
+Apr 23 22:50:19 webserver-2 named[1838]: query: reddit.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-1 sshd[48737]: Failed password for admin from 8.8.8.8 port 40032 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[14822]: query: goyppg06.com IN A + (23.142.184.129)
+Apr 23 22:50:19 webserver-2 named[47069]: query: google.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-1 apache2[25984]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 404 43421
+Apr 23 22:50:19 webserver-2 sshd[50257]: Failed password for root from 192.168.1.10 port 42480 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[31357]: query: stackoverflow.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-1 named[29011]: query: stackoverflow.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 named[30246]: query: reddit.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-1 apache2[2184]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 500 11983
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=212.71.124.188 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[39391]: Failed password for ec2-user from 8.8.8.8 port 4637 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=195.5.171.242 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[41866]: 1.1.1.1 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 200 870
+Apr 23 22:50:19 webserver-3 named[19596]: query: jsdclivr.com IN A + (23.142.184.129)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[39938]: Failed password for root from 8.8.8.8 port 4090 ssh2
+Apr 23 22:50:19 webserver-1 named[54500]: query: cloudflare.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-1 apache2[53625]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 404 28581
+Apr 23 22:50:19 webserver-2 sshd[6314]: Failed password for ubuntu from 8.8.8.8 port 15837 ssh2
+Apr 23 22:50:19 webserver-1 apache2[60149]: 209.34.235.18 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 43625
+Apr 23 22:50:19 webserver-3 named[19411]: query: amazon.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-3 apache2[28034]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 404 33086
+Apr 23 22:50:19 webserver-1 sshd[37574]: Failed password for ubuntu from 10.0.0.5 port 36033 ssh2
+Apr 23 22:50:19 webserver-2 named[64875]: query: wikipedia.org IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-3 sshd[26208]: Failed password for ec2-user from 8.8.8.8 port 2102 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[13480]: Failed password for admin from 45.148.10.212 port 36364 ssh2
+Apr 23 22:50:19 webserver-2 apache2[4320]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 500 48937
+Apr 23 22:50:19 webserver-2 apache2[4250]: 192.168.1.10 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 403 14844
+Apr 23 22:50:19 webserver-2 named[22372]: query: cloudflare.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-3 named[22837]: query: github.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 named[23156]: query: amazon.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-1 sshd[34228]: Failed password for admin from 212.71.124.188 port 58384 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[57955]: query: amazon.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[49839]: query: zybbzlast.com IN A + (209.34.235.18)
+Apr 23 22:50:19 webserver-2 named[41992]: query: stackoverflow.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[24274]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 500 43448
+Apr 23 22:50:19 webserver-1 apache2[49167]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 14923
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=23.142.184.129 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=83.142.209.11 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[15096]: query: reddit.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[65388]: Failed password for admin from 192.168.1.10 port 7446 ssh2
+Apr 23 22:50:19 webserver-2 sshd[51766]: Failed password for root from 8.8.8.8 port 62385 ssh2
+Apr 23 22:50:19 webserver-1 sshd[36982]: Failed password for ec2-user from 8.8.8.8 port 41362 ssh2
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[46256]: Failed password for ubuntu from 1.1.1.1 port 35321 ssh2
+Apr 23 22:50:19 webserver-1 named[40504]: query: amazon.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-3 sshd[62379]: Failed password for root from 8.8.8.8 port 18797 ssh2
+Apr 23 22:50:19 webserver-3 sshd[1067]: Failed password for admin from 23.142.184.129 port 61226 ssh2
+Apr 23 22:50:19 webserver-3 apache2[13018]: 192.168.1.20 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 200 24347
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[59823]: Failed password for root from 10.0.0.5 port 34163 ssh2
+Apr 23 22:50:19 webserver-3 sshd[53531]: Failed password for ec2-user from 209.34.235.18 port 32770 ssh2
+Apr 23 22:50:19 webserver-3 apache2[36400]: 212.71.124.188 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 403 20156
+Apr 23 22:50:19 webserver-2 sshd[31991]: Failed password for root from 23.142.184.129 port 53001 ssh2
+Apr 23 22:50:19 webserver-1 named[52743]: query: amazon.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 sshd[44499]: Failed password for root from 10.0.0.5 port 41155 ssh2
+Apr 23 22:50:19 webserver-3 named[16535]: query: google.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[29281]: query: microsoft.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 named[44761]: query: github.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 sshd[61474]: Failed password for ubuntu from 212.71.124.188 port 29021 ssh2
+Apr 23 22:50:19 webserver-2 apache2[13031]: 83.142.209.11 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 6811
+Apr 23 22:50:19 webserver-3 apache2[35131]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 403 45053
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[63719]: Failed password for ec2-user from 195.5.171.242 port 41471 ssh2
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[49452]: Failed password for admin from 192.168.1.10 port 51017 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[10606]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 403 35604
+Apr 23 22:50:19 webserver-2 apache2[50057]: 10.0.0.5 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 200 19440
+Apr 23 22:50:19 webserver-3 sshd[30636]: Failed password for root from 83.142.209.11 port 53041 ssh2
+Apr 23 22:50:19 webserver-2 apache2[26847]: 195.5.171.242 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 500 28814
+Apr 23 22:50:19 webserver-2 apache2[3674]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 10148
+Apr 23 22:50:19 webserver-3 sshd[4420]: Failed password for admin from 8.8.8.8 port 45577 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[26870]: Failed password for root from 1.1.1.1 port 45353 ssh2
+Apr 23 22:50:19 webserver-3 sshd[64410]: Failed password for root from 192.168.1.10 port 6431 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[6826]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 200 38586
+Apr 23 22:50:19 webserver-3 sshd[27745]: Failed password for ubuntu from 209.34.235.18 port 43078 ssh2
+Apr 23 22:50:19 webserver-3 named[65201]: query: amazon.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-2 apache2[45422]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 404 4909
+Apr 23 22:50:19 webserver-3 sshd[44333]: Failed password for root from 1.1.1.1 port 5268 ssh2
+Apr 23 22:50:19 webserver-2 sshd[18062]: Failed password for admin from 192.168.1.20 port 45121 ssh2
+Apr 23 22:50:19 webserver-1 sshd[54111]: Failed password for ubuntu from 192.168.1.20 port 26672 ssh2
+Apr 23 22:50:19 webserver-1 sshd[33760]: Failed password for ubuntu from 8.8.8.8 port 30783 ssh2
+Apr 23 22:50:19 webserver-2 named[43964]: query: github.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-1 apache2[61779]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 27365
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=23.142.184.129 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[25845]: query: cloudflare.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 named[24682]: query: wikipedia.org IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-1 named[46416]: query: clondflare.com IN A + (83.142.209.11)
+Apr 23 22:50:19 webserver-1 named[9141]: query: amazon.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-3 named[18683]: query: google.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=45.148.10.212 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[24885]: Failed password for admin from 23.142.184.129 port 45973 ssh2
+Apr 23 22:50:19 webserver-2 sshd[43514]: Failed password for ubuntu from 192.168.1.10 port 12742 ssh2
+Apr 23 22:50:19 webserver-2 sshd[31425]: Failed password for ec2-user from 192.168.1.20 port 24172 ssh2
+Apr 23 22:50:19 webserver-3 named[12911]: query: reddit.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 named[5703]: query: aqyaqua.com IN A + (45.148.10.212)
+Apr 23 22:50:19 webserver-2 named[39654]: query: cloudflare.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-2 named[51343]: query: cloudflare.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-3 apache2[21530]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 403 27364
+Apr 23 22:50:19 webserver-1 sshd[54879]: Failed password for ubuntu from 10.0.0.5 port 59362 ssh2
+Apr 23 22:50:19 webserver-2 apache2[6266]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 23814
+Apr 23 22:50:19 webserver-3 apache2[48718]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 403 16074
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[36315]: Failed password for root from 192.168.1.20 port 64980 ssh2
+Apr 23 22:50:19 webserver-3 named[2587]: query: jsdclivr.com IN A + (83.142.209.203)
+Apr 23 22:50:19 webserver-2 named[48682]: query: clondflare.com IN A + (45.148.10.212)
+Apr 23 22:50:19 webserver-1 apache2[16984]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 2812
+Apr 23 22:50:19 webserver-2 named[26961]: query: cloudflare.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-2 apache2[49779]: 1.1.1.1 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 200 1205
+Apr 23 22:50:19 webserver-3 apache2[33505]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 500 7171
+Apr 23 22:50:19 webserver-2 named[2853]: query: github.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[47979]: 209.34.235.18 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 32332
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=195.5.171.242 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[17852]: query: almacensantangel.com IN A + (45.148.10.212)
+Apr 23 22:50:19 webserver-3 sshd[31887]: Failed password for ec2-user from 212.71.124.188 port 6271 ssh2
+Apr 23 22:50:19 webserver-1 named[9912]: query: cloudflare.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-1 sshd[38482]: Failed password for admin from 10.0.0.5 port 64598 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[53305]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 403 28540
+Apr 23 22:50:19 webserver-3 sshd[18477]: Failed password for admin from 192.168.1.20 port 9479 ssh2
+Apr 23 22:50:19 webserver-2 apache2[49802]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 35926
+Apr 23 22:50:19 webserver-3 sshd[9255]: Failed password for ubuntu from 212.71.124.188 port 45662 ssh2
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[30404]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 29693
+Apr 23 22:50:19 webserver-3 sshd[11408]: Failed password for ec2-user from 212.71.124.188 port 38164 ssh2
+Apr 23 22:50:19 webserver-3 sshd[58502]: Failed password for admin from 1.1.1.1 port 13002 ssh2
+Apr 23 22:50:19 webserver-3 apache2[26220]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 404 26881
+Apr 23 22:50:19 webserver-3 named[53147]: query: reddit.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=83.142.209.11 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[62357]: query: github.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-1 named[64554]: query: github.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-2 named[25828]: query: google.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-3 apache2[42202]: 192.168.1.20 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 500 7373
+Apr 23 22:50:19 webserver-3 apache2[17709]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 200 29083
+Apr 23 22:50:19 webserver-2 sshd[8684]: Failed password for root from 192.168.1.20 port 16804 ssh2
+Apr 23 22:50:19 webserver-2 apache2[60931]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 11095
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=209.34.235.18 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[63224]: 45.148.10.212 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 12439
+Apr 23 22:50:19 webserver-2 apache2[43001]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 404 21942
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[40991]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 45089
+Apr 23 22:50:19 webserver-1 apache2[46424]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 500 46191
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[35297]: query: wikipedia.org IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-3 named[18566]: query: microsoft.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=83.142.209.11 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[31756]: query: cloudflare.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[17482]: query: microsoft.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 named[14651]: query: amazon.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-3 named[31507]: query: github.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-1 named[26062]: query: wikipedia.org IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 named[48114]: query: microsoft.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-3 sshd[28685]: Failed password for ec2-user from 192.168.1.10 port 52015 ssh2
+Apr 23 22:50:19 webserver-3 sshd[46799]: Failed password for admin from 8.8.8.8 port 42879 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[54530]: query: wikipedia.org IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 named[29418]: query: linuxdistro.net IN A + (83.142.209.203)
+Apr 23 22:50:19 webserver-2 named[34758]: query: reddit.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-1 named[50221]: query: reddit.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-2 named[34909]: query: microsoft.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[43251]: Failed password for ubuntu from 1.1.1.1 port 4006 ssh2
+Apr 23 22:50:19 webserver-1 named[36697]: query: wikipedia.org IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-2 sshd[13151]: Failed password for ec2-user from 8.8.8.8 port 29945 ssh2
+Apr 23 22:50:19 webserver-1 named[45314]: query: stackoverflow.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[26785]: Failed password for ec2-user from 45.148.10.212 port 32471 ssh2
+Apr 23 22:50:19 webserver-3 sshd[6284]: Failed password for ec2-user from 1.1.1.1 port 29213 ssh2
+Apr 23 22:50:19 webserver-2 sshd[11928]: Failed password for ubuntu from 8.8.8.8 port 42471 ssh2
+Apr 23 22:50:19 webserver-2 sshd[32555]: Failed password for admin from 192.168.1.20 port 19425 ssh2
+Apr 23 22:50:19 webserver-3 named[7704]: query: maccmsp.la IN A + (212.71.124.188)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[9979]: query: clondflare.com IN A + (195.5.171.242)
+Apr 23 22:50:19 webserver-3 named[22090]: query: wikipedia.org IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[33436]: Failed password for ec2-user from 1.1.1.1 port 41533 ssh2
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[43959]: Failed password for admin from 10.0.0.5 port 47760 ssh2
+Apr 23 22:50:19 webserver-2 named[23880]: query: jsdclivr.com IN A + (23.142.184.129)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[52073]: query: stackoverflow.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[26300]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 33609
+Apr 23 22:50:19 webserver-2 apache2[37365]: 45.148.10.212 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 404 41017
+Apr 23 22:50:19 webserver-1 sshd[43717]: Failed password for ec2-user from 23.142.184.129 port 64029 ssh2
+Apr 23 22:50:19 webserver-3 named[8914]: query: stackoverflow.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-1 sshd[59058]: Failed password for root from 10.0.0.5 port 65040 ssh2
+Apr 23 22:50:19 webserver-2 sshd[64161]: Failed password for root from 192.168.1.20 port 9976 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[49020]: 209.34.235.18 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 404 36516
+Apr 23 22:50:19 webserver-3 sshd[48631]: Failed password for ubuntu from 1.1.1.1 port 57030 ssh2
+Apr 23 22:50:19 webserver-3 named[57209]: query: google.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-3 apache2[12499]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 40264
+Apr 23 22:50:19 webserver-1 apache2[60104]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 404 7544
+Apr 23 22:50:19 webserver-2 sshd[5145]: Failed password for ubuntu from 192.168.1.20 port 11760 ssh2
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=209.34.235.18 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[35219]: query: google.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[2614]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 6356
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[57268]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 21922
+Apr 23 22:50:19 webserver-1 apache2[1759]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 41489
+Apr 23 22:50:19 webserver-2 apache2[8135]: 83.142.209.11 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 24911
+Apr 23 22:50:19 webserver-2 apache2[38989]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 200 28693
+Apr 23 22:50:19 webserver-1 apache2[16775]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 22800
+Apr 23 22:50:19 webserver-2 apache2[10457]: 83.142.209.11 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 41478
+Apr 23 22:50:19 webserver-3 apache2[29377]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 500 19461
+Apr 23 22:50:19 webserver-3 sshd[39244]: Failed password for root from 192.168.1.20 port 58968 ssh2
+Apr 23 22:50:19 webserver-3 named[13812]: query: ailyun-oss.com IN A + (83.142.209.11)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[65528]: query: reddit.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-3 named[53487]: query: github.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-1 named[49444]: query: microsoft.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[31119]: Failed password for ubuntu from 23.142.184.129 port 5962 ssh2
+Apr 23 22:50:19 webserver-1 sshd[41841]: Failed password for ubuntu from 8.8.8.8 port 54877 ssh2
+Apr 23 22:50:19 webserver-2 named[18013]: query: amazon.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[14030]: Failed password for admin from 192.168.1.10 port 46867 ssh2
+Apr 23 22:50:19 webserver-1 sshd[4852]: Failed password for ubuntu from 1.1.1.1 port 4719 ssh2
+Apr 23 22:50:19 webserver-1 named[63849]: query: microsoft.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-1 sshd[54479]: Failed password for admin from 8.8.8.8 port 46004 ssh2
+Apr 23 22:50:19 webserver-3 sshd[31551]: Failed password for admin from 10.0.0.5 port 46007 ssh2
+Apr 23 22:50:19 webserver-1 named[33109]: query: jsdclivr.com IN A + (83.142.209.11)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=83.142.209.11 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[60652]: Failed password for root from 10.0.0.5 port 12430 ssh2
+Apr 23 22:50:19 webserver-1 apache2[28968]: 1.1.1.1 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 200 40882
+Apr 23 22:50:19 webserver-2 apache2[55677]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 404 11799
+Apr 23 22:50:19 webserver-2 apache2[34752]: 63.251.162.11 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 404 41138
+Apr 23 22:50:19 webserver-1 sshd[37947]: Failed password for ubuntu from 10.0.0.5 port 54107 ssh2
+Apr 23 22:50:19 webserver-1 apache2[58598]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 500 15296
+Apr 23 22:50:19 webserver-1 sshd[3018]: Failed password for ec2-user from 1.1.1.1 port 53367 ssh2
+Apr 23 22:50:19 webserver-1 apache2[13399]: 212.71.124.188 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 7943
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[2808]: query: microsoft.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 named[29618]: query: microsoft.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 named[3767]: query: almacensantangel.com IN A + (195.5.171.242)
+Apr 23 22:50:19 webserver-1 apache2[29322]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 404 22104
+Apr 23 22:50:19 webserver-2 apache2[6380]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 403 445
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=212.71.124.188 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[60643]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 21717
+Apr 23 22:50:19 webserver-3 named[38794]: query: cloudflare.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-3 apache2[7597]: 209.34.235.18 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 500 26995
+Apr 23 22:50:19 webserver-2 apache2[6820]: 23.142.184.129 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 403 21562
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[62080]: Failed password for ubuntu from 45.148.10.212 port 6920 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=209.34.235.18 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[62863]: query: reddit.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-3 apache2[57729]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 403 38093
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[41935]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 500 16198
+Apr 23 22:50:19 webserver-3 sshd[36097]: Failed password for root from 192.168.1.20 port 51234 ssh2
+Apr 23 22:50:19 webserver-3 apache2[37226]: 23.142.184.129 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 403 10999
+Apr 23 22:50:19 webserver-3 named[32420]: query: aqyaqua.com IN A + (45.148.10.212)
+Apr 23 22:50:19 webserver-2 named[22472]: query: clondflare.com IN A + (83.142.209.203)
+Apr 23 22:50:19 webserver-3 sshd[10913]: Failed password for root from 192.168.1.20 port 53210 ssh2
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[53160]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 29683
+Apr 23 22:50:19 webserver-3 sshd[51320]: Failed password for ec2-user from 192.168.1.10 port 14922 ssh2
+Apr 23 22:50:19 webserver-1 named[31292]: query: microsoft.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[43211]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 20628
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[15035]: 209.34.235.18 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 403 34297
+Apr 23 22:50:19 webserver-1 named[64258]: query: amazon.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-3 named[39651]: query: linuxdistro.net IN A + (209.34.235.18)
+Apr 23 22:50:19 webserver-3 named[48094]: query: github.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-3 apache2[39152]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 404 23752
+Apr 23 22:50:19 webserver-1 apache2[34253]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 403 22297
+Apr 23 22:50:19 webserver-2 apache2[19614]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 500 42951
+Apr 23 22:50:19 webserver-3 sshd[50724]: Failed password for admin from 10.0.0.5 port 32910 ssh2
+Apr 23 22:50:19 webserver-3 sshd[17692]: Failed password for admin from 10.0.0.5 port 32045 ssh2
+Apr 23 22:50:19 webserver-2 sshd[65095]: Failed password for ubuntu from 45.148.10.212 port 43479 ssh2
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[35395]: query: clondflare.com IN A + (63.251.162.11)
+Apr 23 22:50:19 webserver-1 sshd[24856]: Failed password for admin from 45.148.10.212 port 18889 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[62375]: Failed password for admin from 10.0.0.5 port 16525 ssh2
+Apr 23 22:50:19 webserver-3 named[5432]: query: amazon.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-3 apache2[17245]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 403 26583
+Apr 23 22:50:19 webserver-1 sshd[33650]: Failed password for admin from 10.0.0.5 port 4171 ssh2
+Apr 23 22:50:19 webserver-3 apache2[36477]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 773
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[21416]: Failed password for ec2-user from 1.1.1.1 port 5073 ssh2
+Apr 23 22:50:19 webserver-2 apache2[22043]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 18737
+Apr 23 22:50:19 webserver-3 named[10021]: query: stackoverflow.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[10046]: 212.71.124.188 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 6393
+Apr 23 22:50:19 webserver-2 sshd[61693]: Failed password for ubuntu from 10.0.0.5 port 12072 ssh2
+Apr 23 22:50:19 webserver-2 sshd[51158]: Failed password for admin from 195.5.171.242 port 41743 ssh2
+Apr 23 22:50:19 webserver-2 named[13598]: query: amazon.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-2 apache2[11334]: 83.142.209.11 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 403 19862
+Apr 23 22:50:19 webserver-2 sshd[27870]: Failed password for admin from 10.0.0.5 port 33091 ssh2
+Apr 23 22:50:19 webserver-1 apache2[9135]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 35067
+Apr 23 22:50:19 webserver-1 apache2[19001]: 1.1.1.1 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 500 10878
+Apr 23 22:50:19 webserver-2 apache2[37778]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 47955
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[11265]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 24911
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[11727]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 404 2365
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[13832]: query: reddit.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=195.5.171.242 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[22538]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 500 10415
+Apr 23 22:50:19 webserver-2 named[14193]: query: reddit.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-3 sshd[29570]: Failed password for ubuntu from 63.251.162.11 port 34910 ssh2
+Apr 23 22:50:19 webserver-3 apache2[59334]: 195.5.171.242 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 23367
+Apr 23 22:50:19 webserver-2 sshd[24594]: Failed password for ubuntu from 10.0.0.5 port 30564 ssh2
+Apr 23 22:50:19 webserver-1 sshd[37637]: Failed password for ec2-user from 192.168.1.20 port 5406 ssh2
+Apr 23 22:50:19 webserver-1 apache2[11065]: 1.1.1.1 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 200 45995
+Apr 23 22:50:19 webserver-3 apache2[9578]: 83.142.209.11 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 16796
+Apr 23 22:50:19 webserver-3 apache2[50944]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 500 23013
+Apr 23 22:50:19 webserver-3 named[35749]: query: stackoverflow.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 sshd[54585]: Failed password for ec2-user from 192.168.1.10 port 14536 ssh2
+Apr 23 22:50:19 webserver-2 named[41399]: query: reddit.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 apache2[13255]: 45.148.10.212 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 25941
+Apr 23 22:50:19 webserver-3 apache2[65286]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 403 47585
+Apr 23 22:50:19 webserver-2 sshd[31823]: Failed password for root from 1.1.1.1 port 37369 ssh2
+Apr 23 22:50:19 webserver-3 sshd[14602]: Failed password for ec2-user from 10.0.0.5 port 42474 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=63.251.162.11 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=45.148.10.212 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[55917]: query: google.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[21635]: query: google.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-3 sshd[33225]: Failed password for ec2-user from 192.168.1.10 port 27332 ssh2
+Apr 23 22:50:19 webserver-3 sshd[3720]: Failed password for root from 8.8.8.8 port 27658 ssh2
+Apr 23 22:50:19 webserver-2 apache2[58025]: 45.148.10.212 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 404 33525
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[56871]: Failed password for admin from 8.8.8.8 port 28468 ssh2
+Apr 23 22:50:19 webserver-3 named[48060]: query: stackoverflow.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[40193]: Failed password for root from 63.251.162.11 port 19351 ssh2
+Apr 23 22:50:19 webserver-1 apache2[17333]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 403 49371
+Apr 23 22:50:19 webserver-2 apache2[4653]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 200 20180
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[12627]: Failed password for root from 10.0.0.5 port 62477 ssh2
+Apr 23 22:50:19 webserver-3 apache2[54922]: 10.0.0.5 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 404 39146
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[51335]: Failed password for ubuntu from 192.168.1.10 port 29197 ssh2
+Apr 23 22:50:19 webserver-3 apache2[14195]: 83.142.209.203 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 200 15384
+Apr 23 22:50:19 webserver-1 named[33148]: query: stackoverflow.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-1 apache2[9796]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 403 31372
+Apr 23 22:50:19 webserver-1 named[55246]: query: google.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-2 sshd[34678]: Failed password for admin from 1.1.1.1 port 12176 ssh2
+Apr 23 22:50:19 webserver-3 apache2[34402]: 209.34.235.18 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 200 8236
+Apr 23 22:50:19 webserver-3 named[2875]: query: linuxdistro.net IN A + (195.5.171.242)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[63078]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 403 30171
+Apr 23 22:50:19 webserver-1 named[60509]: query: reddit.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=195.5.171.242 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[54564]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 19288
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[6345]: Failed password for root from 10.0.0.5 port 44069 ssh2
+Apr 23 22:50:19 webserver-2 sshd[57758]: Failed password for admin from 192.168.1.10 port 30565 ssh2
+Apr 23 22:50:19 webserver-3 named[4366]: query: reddit.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-1 sshd[14951]: Failed password for ubuntu from 192.168.1.10 port 64675 ssh2
+Apr 23 22:50:19 webserver-2 named[9207]: query: amazon.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[64541]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 15886
+Apr 23 22:50:19 webserver-1 named[25404]: query: cloudflare.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-3 apache2[37427]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 7755
+Apr 23 22:50:19 webserver-1 named[36743]: query: stackoverflow.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 sshd[34525]: Failed password for root from 192.168.1.20 port 8882 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[34434]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 47099
+Apr 23 22:50:19 webserver-1 named[54830]: query: amazon.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-1 apache2[14359]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 48440
+Apr 23 22:50:19 webserver-2 sshd[11271]: Failed password for ubuntu from 8.8.8.8 port 58511 ssh2
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[22019]: Failed password for root from 1.1.1.1 port 54060 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[18007]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 5129
+Apr 23 22:50:19 webserver-1 apache2[18973]: 83.142.209.11 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 404 5384
+Apr 23 22:50:19 webserver-2 apache2[18030]: 192.168.1.20 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 200 374
+Apr 23 22:50:19 webserver-2 apache2[24196]: 63.251.162.11 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 403 48438
+Apr 23 22:50:19 webserver-3 named[14646]: query: jsdclivr.com IN A + (195.5.171.242)
+Apr 23 22:50:19 webserver-1 sshd[9032]: Failed password for root from 8.8.8.8 port 55010 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[61361]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 39831
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 apache2[35943]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 404 11087
+Apr 23 22:50:19 webserver-1 sshd[9607]: Failed password for ubuntu from 8.8.8.8 port 24218 ssh2
+Apr 23 22:50:19 webserver-1 apache2[6160]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 200 13098
+Apr 23 22:50:19 webserver-1 sshd[4052]: Failed password for root from 1.1.1.1 port 22903 ssh2
+Apr 23 22:50:19 webserver-1 apache2[9413]: 8.8.8.8 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 200 32851
+Apr 23 22:50:19 webserver-3 named[38305]: query: google.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=83.142.209.11 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[55653]: query: cloudflare.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-2 named[6540]: query: wikipedia.org IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=45.148.10.212 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[30452]: query: reddit.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=45.148.10.212 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[48265]: query: amazon.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-1 sshd[24928]: Failed password for admin from 192.168.1.10 port 63116 ssh2
+Apr 23 22:50:19 webserver-2 sshd[27125]: Failed password for ubuntu from 195.5.171.242 port 22819 ssh2
+Apr 23 22:50:19 webserver-2 sshd[38269]: Failed password for root from 1.1.1.1 port 8247 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[57150]: 83.142.209.11 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 48222
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[34760]: query: cloudflare.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-2 apache2[40883]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 404 23371
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[33262]: query: cloudflare.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-1 sshd[60560]: Failed password for ubuntu from 45.148.10.212 port 42146 ssh2
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[58708]: 195.5.171.242 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 404 9564
+Apr 23 22:50:19 webserver-2 apache2[23403]: 212.71.124.188 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 404 8738
+Apr 23 22:50:19 webserver-1 sshd[33779]: Failed password for root from 8.8.8.8 port 2836 ssh2
+Apr 23 22:50:19 webserver-1 named[64287]: query: reddit.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 named[32085]: query: cloudflare.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-3 sshd[55922]: Failed password for root from 8.8.8.8 port 23906 ssh2
+Apr 23 22:50:19 webserver-1 sshd[54208]: Failed password for ec2-user from 10.0.0.5 port 45826 ssh2
+Apr 23 22:50:19 webserver-2 sshd[44488]: Failed password for ubuntu from 8.8.8.8 port 8848 ssh2
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=195.5.171.242 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[34948]: query: github.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-1 apache2[60515]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 403 33115
+Apr 23 22:50:19 webserver-1 sshd[51196]: Failed password for ubuntu from 192.168.1.10 port 22597 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[51916]: Failed password for ubuntu from 1.1.1.1 port 2799 ssh2
+Apr 23 22:50:19 webserver-2 apache2[50035]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 10908
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[34731]: query: cloudflare.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-3 named[20372]: query: wikipedia.org IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-1 named[31133]: query: amazon.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[47273]: Failed password for admin from 192.168.1.10 port 26360 ssh2
+Apr 23 22:50:19 webserver-1 sshd[49182]: Failed password for ubuntu from 192.168.1.20 port 65366 ssh2
+Apr 23 22:50:19 webserver-3 named[33181]: query: clondflare.com IN A + (212.71.124.188)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[53535]: Failed password for root from 192.168.1.10 port 51129 ssh2
+Apr 23 22:50:19 webserver-3 sshd[53529]: Failed password for ec2-user from 1.1.1.1 port 32348 ssh2
+Apr 23 22:50:19 webserver-3 apache2[26038]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 404 34792
+Apr 23 22:50:19 webserver-2 named[31912]: query: maccmsp.la IN A + (83.142.209.203)
+Apr 23 22:50:19 webserver-1 apache2[36770]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 4257
+Apr 23 22:50:19 webserver-2 apache2[49790]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 403 22181
+Apr 23 22:50:19 webserver-3 named[61947]: query: microsoft.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-1 apache2[41391]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 500 14272
+Apr 23 22:50:19 webserver-3 named[7493]: query: amazon.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-2 sshd[33668]: Failed password for root from 10.0.0.5 port 23870 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[41268]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 30714
+Apr 23 22:50:19 webserver-3 named[45550]: query: reddit.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-2 named[65179]: query: reddit.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-1 named[46879]: query: microsoft.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=63.251.162.11 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[35668]: Failed password for ec2-user from 192.168.1.10 port 56365 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[21636]: Failed password for ec2-user from 1.1.1.1 port 64691 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[15492]: Failed password for admin from 192.168.1.10 port 27447 ssh2
+Apr 23 22:50:19 webserver-3 named[6136]: query: wikipedia.org IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-3 sshd[28663]: Failed password for ec2-user from 10.0.0.5 port 33593 ssh2
+Apr 23 22:50:19 webserver-3 sshd[30800]: Failed password for ubuntu from 192.168.1.10 port 34411 ssh2
+Apr 23 22:50:19 webserver-3 named[37587]: query: stackoverflow.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 apache2[6381]: 23.142.184.129 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 13677
+Apr 23 22:50:19 webserver-1 sshd[28345]: Failed password for ubuntu from 1.1.1.1 port 57777 ssh2
+Apr 23 22:50:19 webserver-2 sshd[39374]: Failed password for root from 192.168.1.20 port 58292 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[36140]: 195.5.171.242 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 47236
+Apr 23 22:50:19 webserver-1 sshd[32465]: Failed password for ubuntu from 8.8.8.8 port 58800 ssh2
+Apr 23 22:50:19 webserver-3 named[36460]: query: aqyaqua.com IN A + (83.142.209.11)
+Apr 23 22:50:19 webserver-2 apache2[24602]: 83.142.209.11 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 200 1933
+Apr 23 22:50:19 webserver-1 apache2[34275]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 12512
+Apr 23 22:50:19 webserver-2 apache2[23062]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 403 6336
+Apr 23 22:50:19 webserver-1 named[40904]: query: google.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-3 apache2[38146]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 8827
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[5212]: Failed password for ec2-user from 192.168.1.10 port 35840 ssh2
+Apr 23 22:50:19 webserver-1 sshd[43051]: Failed password for ubuntu from 10.0.0.5 port 8218 ssh2
+Apr 23 22:50:19 webserver-3 sshd[54354]: Failed password for ec2-user from 209.34.235.18 port 55434 ssh2
+Apr 23 22:50:19 webserver-2 sshd[23036]: Failed password for ubuntu from 8.8.8.8 port 1367 ssh2
+Apr 23 22:50:19 webserver-1 sshd[59671]: Failed password for admin from 192.168.1.20 port 33351 ssh2
+Apr 23 22:50:19 webserver-1 apache2[51692]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 500 34021
+Apr 23 22:50:19 webserver-3 named[49931]: query: amazon.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 named[28242]: query: microsoft.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-1 sshd[23274]: Failed password for ec2-user from 1.1.1.1 port 62991 ssh2
+Apr 23 22:50:19 webserver-3 apache2[31458]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 500 7946
+Apr 23 22:50:19 webserver-2 sshd[37536]: Failed password for ubuntu from 192.168.1.20 port 29667 ssh2
+Apr 23 22:50:19 webserver-2 apache2[38426]: 192.168.1.10 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 200 21579
+Apr 23 22:50:19 webserver-2 named[42274]: query: stackoverflow.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 named[42499]: query: clondflare.com IN A + (83.142.209.203)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[62766]: query: almacensantangel.com IN A + (23.142.184.129)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[20045]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 500 7182
+Apr 23 22:50:19 webserver-1 apache2[45498]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 404 17537
+Apr 23 22:50:19 webserver-3 apache2[50789]: 192.168.1.10 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 200 6116
+Apr 23 22:50:19 webserver-3 sshd[57327]: Failed password for ubuntu from 8.8.8.8 port 52390 ssh2
+Apr 23 22:50:19 webserver-1 sshd[14784]: Failed password for root from 1.1.1.1 port 39510 ssh2
+Apr 23 22:50:19 webserver-1 sshd[13882]: Failed password for root from 1.1.1.1 port 25996 ssh2
+Apr 23 22:50:19 webserver-1 named[3531]: query: amazon.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-3 named[15173]: query: maccmsp.la IN A + (23.142.184.129)
+Apr 23 22:50:19 webserver-2 named[1148]: query: google.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-1 apache2[17981]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 27211
+Apr 23 22:50:19 webserver-2 apache2[16563]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 500 33023
+Apr 23 22:50:19 webserver-3 sshd[49176]: Failed password for ec2-user from 212.71.124.188 port 8890 ssh2
+Apr 23 22:50:19 webserver-1 named[60479]: query: google.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-1 apache2[59927]: 23.142.184.129 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 7767
+Apr 23 22:50:19 webserver-3 apache2[51831]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 500 33829
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[1583]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 500 15381
+Apr 23 22:50:19 webserver-1 sshd[53616]: Failed password for root from 1.1.1.1 port 11589 ssh2
+Apr 23 22:50:19 webserver-1 named[35952]: query: zybbzlast.com IN A + (83.142.209.11)
+Apr 23 22:50:19 webserver-2 apache2[37791]: 45.148.10.212 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 404 24892
+Apr 23 22:50:19 webserver-2 sshd[10693]: Failed password for ec2-user from 192.168.1.20 port 6698 ssh2
+Apr 23 22:50:19 webserver-2 sshd[44552]: Failed password for admin from 192.168.1.10 port 6160 ssh2
+Apr 23 22:50:19 webserver-3 named[14488]: query: github.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-1 named[38535]: query: debianhacks.net IN A + (209.34.235.18)
+Apr 23 22:50:19 webserver-3 named[11626]: query: wikipedia.org IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-1 named[55738]: query: cloudflare.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[47934]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 404 49572
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=212.71.124.188 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[42318]: 209.34.235.18 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 404 34004
+Apr 23 22:50:19 webserver-3 apache2[41338]: 209.34.235.18 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 403 18169
+Apr 23 22:50:19 webserver-1 sshd[27408]: Failed password for ec2-user from 192.168.1.20 port 3502 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[34274]: query: almacensantangel.com IN A + (45.148.10.212)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=212.71.124.188 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[2952]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 4558
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[27900]: query: google.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[55696]: Failed password for root from 83.142.209.11 port 15365 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[63512]: Failed password for ubuntu from 10.0.0.5 port 7076 ssh2
+Apr 23 22:50:19 webserver-1 apache2[40699]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 200 165
+Apr 23 22:50:19 webserver-2 named[8028]: query: wikipedia.org IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-1 apache2[36855]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 38597
+Apr 23 22:50:19 webserver-2 apache2[55242]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 404 38444
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=212.71.124.188 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[48161]: Failed password for ubuntu from 8.8.8.8 port 37307 ssh2
+Apr 23 22:50:19 webserver-3 sshd[55845]: Failed password for root from 195.5.171.242 port 5488 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[17436]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 29186
+Apr 23 22:50:19 webserver-3 apache2[6300]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 403 18539
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[28051]: Failed password for root from 192.168.1.10 port 44983 ssh2
+Apr 23 22:50:19 webserver-2 apache2[30711]: 8.8.8.8 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 25233
+Apr 23 22:50:19 webserver-1 apache2[21889]: 23.142.184.129 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 403 26123
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[16048]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /api/v1/users HTTP/1.1" 500 34315
+Apr 23 22:50:19 webserver-2 named[47864]: query: amazon.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-2 apache2[44845]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 404 14108
+Apr 23 22:50:19 webserver-3 apache2[3603]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 36967
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=209.34.235.18 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 named[16008]: query: cloudflare.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-1 named[65216]: query: reddit.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=63.251.162.11 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=83.142.209.203 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[64818]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 2596
+Apr 23 22:50:19 webserver-3 apache2[21850]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 403 20000
+Apr 23 22:50:19 webserver-2 sshd[59665]: Failed password for admin from 1.1.1.1 port 19806 ssh2
+Apr 23 22:50:19 webserver-2 named[10893]: query: stackoverflow.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-3 sshd[57805]: Failed password for ec2-user from 1.1.1.1 port 52442 ssh2
+Apr 23 22:50:19 webserver-3 apache2[65025]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 500 42137
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[4097]: query: wikipedia.org IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-3 apache2[48319]: 63.251.162.11 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 404 46847
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=209.34.235.18 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[46013]: Failed password for admin from 212.71.124.188 port 14045 ssh2
+Apr 23 22:50:19 webserver-1 sshd[5140]: Failed password for root from 209.34.235.18 port 21257 ssh2
+Apr 23 22:50:19 webserver-3 named[23672]: query: github.com IN A + (8.8.8.8)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[5567]: 192.168.1.10 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 200 25191
+Apr 23 22:50:19 webserver-1 sshd[38441]: Failed password for ubuntu from 209.34.235.18 port 51737 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 apache2[1624]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /admin HTTP/1.1" 200 45392
+Apr 23 22:50:19 webserver-2 named[45372]: query: cloudflare.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[18751]: Failed password for ec2-user from 10.0.0.5 port 50531 ssh2
+Apr 23 22:50:19 webserver-2 sshd[22903]: Failed password for ec2-user from 192.168.1.10 port 65434 ssh2
+Apr 23 22:50:19 webserver-2 named[12149]: query: wikipedia.org IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=209.34.235.18 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[2735]: Failed password for root from 192.168.1.10 port 1710 ssh2
+Apr 23 22:50:19 webserver-1 named[47383]: query: wikipedia.org IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-3 named[19089]: query: reddit.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-3 apache2[45079]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 500 356
+Apr 23 22:50:19 webserver-1 named[39918]: query: microsoft.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-3 named[48481]: query: debianhacks.net IN A + (195.5.171.242)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[6763]: 192.168.1.10 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 500 33525
+Apr 23 22:50:19 webserver-3 named[62270]: query: amazon.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-1 sshd[33262]: Failed password for ubuntu from 8.8.8.8 port 52790 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=212.71.124.188 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=8.8.8.8 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[49650]: Failed password for root from 192.168.1.20 port 6592 ssh2
+Apr 23 22:50:19 webserver-2 sshd[65489]: Failed password for ubuntu from 192.168.1.20 port 40292 ssh2
+Apr 23 22:50:19 webserver-2 apache2[27788]: 192.168.1.10 - - [Apr 23 22:50:19] "GET / HTTP/1.1" 200 31010
+Apr 23 22:50:19 webserver-3 apache2[65023]: 83.142.209.203 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 404 27438
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 sshd[8016]: Failed password for ubuntu from 10.0.0.5 port 21614 ssh2
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 sshd[26812]: Failed password for root from 8.8.8.8 port 22690 ssh2
+Apr 23 22:50:19 webserver-3 named[43249]: query: github.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-3 named[14100]: query: wikipedia.org IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-3 apache2[45377]: 192.168.1.20 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 500 11045
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 sshd[51556]: Failed password for admin from 45.148.10.212 port 14674 ssh2
+Apr 23 22:50:19 webserver-2 named[25167]: query: google.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-2 sshd[25365]: Failed password for root from 8.8.8.8 port 28785 ssh2
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[3850]: query: reddit.com IN A + (192.168.1.10)
+Apr 23 22:50:19 webserver-1 named[2454]: query: jsdclivr.com IN A + (83.142.209.11)
+Apr 23 22:50:19 webserver-3 named[35015]: query: amazon.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-3 sshd[59661]: Failed password for ubuntu from 10.0.0.5 port 5836 ssh2
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[44523]: query: reddit.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-3 sshd[7430]: Failed password for admin from 192.168.1.10 port 3068 ssh2
+Apr 23 22:50:19 webserver-2 apache2[48001]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /wp-admin HTTP/1.1" 200 42143
+Apr 23 22:50:19 webserver-2 sshd[29491]: Failed password for ubuntu from 1.1.1.1 port 29978 ssh2
+Apr 23 22:50:19 webserver-1 named[16718]: query: microsoft.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=1.1.1.1 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 apache2[52967]: 10.0.0.5 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 500 24537
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[64037]: query: github.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-2 named[1261]: query: amazon.com IN A + (192.168.1.20)
+Apr 23 22:50:19 webserver-3 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.10 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-3 named[65320]: query: amazon.com IN A + (1.1.1.1)
+Apr 23 22:50:19 webserver-2 sshd[51818]: Failed password for root from 192.168.1.20 port 1576 ssh2
+Apr 23 22:50:19 webserver-1 kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.20 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-2 kernel: [UFW BLOCK] IN=eth0 SRC=45.148.10.212 DST=10.0.0.1 PROTO=TCP DPT=443
+Apr 23 22:50:19 webserver-1 named[36055]: query: github.com IN A + (10.0.0.5)
+Apr 23 22:50:19 webserver-2 sshd[6702]: Failed password for admin from 1.1.1.1 port 33831 ssh2
+Apr 23 22:50:19 webserver-1 apache2[55001]: 1.1.1.1 - - [Apr 23 22:50:19] "GET /.env HTTP/1.1" 200 27536
+Apr 23 22:50:19 webserver-1 apache2[27934]: 83.142.209.11 - - [Apr 23 22:50:19] "GET /login HTTP/1.1" 200 17436
+Apr 23 22:50:19 webserver-2 named[65021]: query: stackoverflow.com IN A + (8.8.8.8)

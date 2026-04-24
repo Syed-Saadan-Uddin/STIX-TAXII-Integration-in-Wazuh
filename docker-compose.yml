@@ -25,19 +25,6 @@ services:
       timeout: 10s
       retries: 3
 
-volumes:
-  wazuh_etc:
-    external: true
-    name: single-node_wazuh_etc # Match Wazuh 4.x Docker volume name
-  wazuh_logs:
-    external: true
-    name: single-node_wazuh_logs
-
-networks:
-  wazuh-net:
-    external: true
-    name: single-node_default # Match Wazuh Docker network name
-
   taxii-mock:
     image: python:3.11-slim
     container_name: taxii-mock
@@ -50,3 +37,18 @@ networks:
       - ./simulation/mock_taxii_server.py:/app/mock_taxii_server.py
     ports:
       - "9000:9000"
+    networks:
+      - wazuh-net
+
+volumes:
+  wazuh_etc:
+    external: true
+    name: single-node_wazuh_etc # Match Wazuh 4.x Docker volume name
+  wazuh_logs:
+    external: true
+    name: single-node_wazuh_logs
+
+networks:
+  wazuh-net:
+    external: true
+    name: single-node_default # Match Wazuh Docker network name

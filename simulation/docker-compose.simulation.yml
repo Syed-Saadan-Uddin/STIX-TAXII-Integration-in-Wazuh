@@ -1,7 +1,7 @@
 services:
   # Wazuh Agent - ships simulated logs to Wazuh Manager
   wazuh-agent:
-    image: wazuh/wazuh-agent:4.14.3
+    image: wazuh/wazuh-agent:4.8.0
     container_name: wazuh-agent
     restart: unless-stopped
     environment:

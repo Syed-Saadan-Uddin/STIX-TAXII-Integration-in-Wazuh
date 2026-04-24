@@ -1,15 +1,16 @@
 import { useState, useEffect } from 'react'
-import { Outlet, NavLink, useLocation } from 'react-router-dom'
-import { LayoutDashboard, Database, Shield, Settings, Activity, Menu, X, Bot } from 'lucide-react'
+import { Outlet, NavLink, useLocation, Navigate } from 'react-router-dom'
+import { LayoutDashboard, Database, Shield, Settings, Activity, Menu, X, Bot, ExternalLink, Lock } from 'lucide-react'
 import { getHealth } from '../api/client'
 import Toast from './Toast'
 
 const navItems = [
-    { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-    { to: '/ai-analyst', icon: Bot, label: 'AI Analyst' },
-    { to: '/indicators', icon: Database, label: 'Indicators' },
-    { to: '/mitre', icon: Shield, label: 'MITRE ATT&CK' },
-    { to: '/settings', icon: Settings, label: 'Settings' },
+    { to: '/wazuh', icon: Shield, label: 'Wazuh SIEM' },
+    { to: '/dashboard', icon: LayoutDashboard, label: 'TI Dashboard', locked: true },
+    { to: '/ai-analyst', icon: Bot, label: 'AI Analyst', locked: true },
+    { to: '/indicators', icon: Database, label: 'Indicators', locked: true },
+    { to: '/mitre', icon: Activity, label: 'MITRE Mapping', locked: true },
+    { to: '/settings', icon: Settings, label: 'Settings', locked: true },
 ]
 
 export default function Layout() {
@@ -17,10 +18,39 @@ export default function Layout() {
     const [health, setHealth] = useState(null)
     const [sidebarOpen, setSidebarOpen] = useState(true)
     const [toast, setToast] = useState(null)
+    const [isUnlocked, setIsUnlocked] = useState(false)
 
     // Get page title from current route
     const currentPage = navItems.find(item => location.pathname.startsWith(item.to))
     const pageTitle = currentPage?.label || 'Wazuh-TI'
+
+    // Poll Wazuh Auth status to unlock TI features
+    useEffect(() => {
+        const checkWazuhAuth = async () => {
+            if (isUnlocked) return;
+            try {
+                // Try to hit Wazuh status API. Requires CORS enabled on Wazuh Dashboard.
+                // We use 'include' to send cookies.
+                const resp = await fetch('http://localhost:5601/api/status', {
+                    method: 'GET',
+                    mode: 'cors',
+                    credentials: 'include'
+                });
+                
+                if (resp.ok) {
+                    setIsUnlocked(true);
+                    showToast('Wazuh session detected! Threat-TI features unlocked.', 'success');
+                }
+            } catch (err) {
+                // Ignore errors (means not logged in or CORS blocked)
+                console.debug('Wazuh auth check failed:', err);
+            }
+        }
+
+        const interval = setInterval(checkWazuhAuth, 3000);
+        checkWazuhAuth();
+        return () => clearInterval(interval);
+    }, [isUnlocked]);
 
     // Poll health every 30 seconds
     useEffect(() => {
@@ -42,6 +72,13 @@ export default function Layout() {
         setTimeout(() => setToast(null), 4000)
     }
 
+    // Redirect to wazuh if trying to access locked page
+    const isAccessingLockedPage = currentPage?.locked && !isUnlocked;
+
+    if (isAccessingLockedPage) {
+        return <Navigate to="/wazuh" replace />;
+    }
+
     return (
         <div className="flex h-screen overflow-hidden bg-bg-primary">
             {/* Sidebar */}
@@ -54,21 +91,27 @@ export default function Layout() {
 
                 {/* Nav Links */}
                 <nav className="flex-1 px-3 py-4 space-y-1">
-                    {navItems.map(({ to, icon: Icon, label }) => (
-                        <NavLink
-                            key={to}
-                            to={to}
-                            className={({ isActive }) =>
-                                `flex items-center px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 group ${isActive
-                                    ? 'bg-accent/10 text-accent glow-blue'
-                                    : 'text-text-muted hover:text-text-primary hover:bg-bg-elevated'
-                                }`
-                            }
-                        >
-                            <Icon className="w-5 h-5 mr-3 flex-shrink-0" />
-                            {label}
-                        </NavLink>
-                    ))}
+                    {navItems.map(({ to, icon: Icon, label, locked }) => {
+                        const isDisabled = locked && !isUnlocked;
+                        return (
+                            <NavLink
+                                key={to}
+                                to={isDisabled ? '#' : to}
+                                onClick={(e) => isDisabled && e.preventDefault()}
+                                className={({ isActive }) =>
+                                    `flex items-center px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 group ${
+                                        isDisabled ? 'opacity-40 cursor-not-allowed text-text-muted' :
+                                        isActive ? 'bg-accent/10 text-accent glow-blue' : 
+                                        'text-text-muted hover:text-text-primary hover:bg-bg-elevated'
+                                    }`
+                                }
+                            >
+                                <Icon className="w-5 h-5 mr-3 flex-shrink-0" />
+                                <span className="flex-1">{label}</span>
+                                {isDisabled && <Lock className="w-3.5 h-3.5 ml-2" />}
+                            </NavLink>
+                        );
+                    })}
                 </nav>
 
                 {/* Footer */}
@@ -95,6 +138,27 @@ export default function Layout() {
                     </div>
 
                     <div className="flex items-center space-x-4">
+                        {/* Auth Status */}
+                        {!isUnlocked && (
+                            <button 
+                                onClick={() => {
+                                    setIsUnlocked(true);
+                                    showToast('Interface unlocked manually!', 'success');
+                                }}
+                                className="flex items-center px-3 py-1 rounded-full bg-warning/10 text-warning text-xs font-medium border border-warning/20 hover:bg-warning/20 transition-colors cursor-pointer"
+                                title="Click to unlock if you are already signed in"
+                            >
+                                <Lock className="w-3 h-3 mr-1.5" />
+                                Sign in to Wazuh to Unlock
+                            </button>
+                        )}
+                        {isUnlocked && (
+                            <div className="flex items-center px-3 py-1 rounded-full bg-success/10 text-success text-xs font-medium border border-success/20">
+                                <Shield className="w-3 h-3 mr-1.5" />
+                                Authenticated
+                            </div>
+                        )}
+
                         {/* Connection Status */}
                         <div className="flex items-center text-sm">
                             <div className={`w-2 h-2 rounded-full mr-2 ${health ? 'bg-success animate-pulse-dot' : 'bg-danger'}`} />
@@ -107,7 +171,7 @@ export default function Layout() {
 
                 {/* Page Content */}
                 <main className="flex-1 overflow-auto p-6">
-                    <Outlet context={{ showToast }} />
+                    <Outlet context={{ showToast, isUnlocked }} />
                 </main>
             </div>
 
