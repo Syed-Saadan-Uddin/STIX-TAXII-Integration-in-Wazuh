@@ -28,11 +28,20 @@ engine = create_engine(
     SQLALCHEMY_DATABASE_URL,
     connect_args={
         "check_same_thread": False,
-        "timeout": 30,
+        "timeout": 60,  # Increased timeout for I/O heavy environments
     },
     poolclass=StaticPool,
     echo=False,
 )
+
+# Enable WAL mode for better concurrency and fewer disk I/O errors (e.g. OneDrive)
+from sqlalchemy import event
+@event.listens_for(engine, "connect")
+def set_sqlite_pragma(dbapi_connection, connection_record):
+    cursor = dbapi_connection.cursor()
+    cursor.execute("PRAGMA journal_mode=WAL")
+    cursor.execute("PRAGMA synchronous=NORMAL")
+    cursor.close()
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
