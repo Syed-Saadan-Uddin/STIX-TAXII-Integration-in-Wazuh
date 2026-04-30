@@ -24,11 +24,26 @@ By pulling data from trusted sources like **AlienVault OTX**, **Abuse.ch**, **Ab
 
 ## ✨ Key Features
 
-- 🧠 **AI Threat Prioritization:** Utilizes Google's Gemini models (`gemini-3-flash-preview` / `pro`) to analyze alerts and dynamically score threats based on likelihood of compromise.
+- 🧠 **AI-Driven Threat Predictions:** Utilizes Google's Gemini models (`gemini-3-flash-preview` / `pro`) and ML pipelines to analyze alerts and dynamically predict 4 key metrics:
+  - **Threat Priority & Risk Score**
+  - **Materialization Probability** (Likelihood of actual compromise)
+  - **Predicted Next Attack Stage** (Anticipating attacker movement)
+  - **Recommended Mitigation Actions** (Automated response guidance)
 - ⚡ **Automated Enrichment:** Real-time ingestion and correlation of IOCs (Indicators of Compromise) from leading OSINT feeds.
 - 🗺️ **MITRE ATT&CK Integration:** Automatically maps threat behaviors to MITRE tactics and techniques for strategic defense planning.
 - 📊 **Stunning Dashboard:** A sleek, responsive React + Tailwind CSS frontend providing a bird's-eye view of your security posture.
 - 🐳 **Containerized Architecture:** Fully dockerized for painless deployment and scaling alongside your existing Wazuh manager.
+
+<br/>
+
+## 🔮 Predictive Threat Analytics
+
+Wazuh-TI doesn't just tell you what happened; it tells you **what will happen next** and **how much you should care**. Every ingested alert runs through our AI pipeline to generate:
+
+1. **Risk Score (0-100) & Priority:** Context-aware scoring combining indicator confidence, host criticality, and attack severity.
+2. **Materialization Probability:** Statistical likelihood that the current alert will evolve into a full-scale compromise.
+3. **Next Attack Stage:** Predictive mapping of the attacker's next move on the MITRE ATT&CK framework (e.g., *Privilege Escalation* following *Initial Access*).
+4. **Actionable Recommendations:** Automated, context-specific mitigation steps tailored to your infrastructure.
 
 <br/>
 
@@ -91,21 +106,24 @@ By pulling data from trusted sources like **AlienVault OTX**, **Abuse.ch**, **Ab
 
 ```mermaid
 graph TD
-    A[Wazuh Manager] -->|Alerts/Logs| B(Wazuh-TI Backend FastAPI)
+    A[Wazuh Manager] -->|Raw Alerts & Logs| B(Wazuh-TI Backend FastAPI)
     
-    subgraph Threat Feeds
-    C[AlienVault OTX]
-    D[Abuse.ch / IPDB]
-    E[TAXII / STIX]
+    subgraph Threat Intelligence Feeds
+    C[AlienVault OTX] -.->|IOCs| B
+    D[Abuse.ch / IPDB] -.->|IOCs| B
+    E[TAXII / STIX] -.->|IOCs| B
     end
     
-    C -.->|IOCs| B
-    D -.->|IOCs| B
-    E -.->|IOCs| B
+    subgraph AI Predictive Pipeline
+    B -->|Contextualized Data| F((Google Gemini AI))
+    F -->|Threat Modeling| H{Predictive Engine}
+    H -->|1. Risk Score| P[Prediction DB]
+    H -->|2. Materialization Prob| P
+    H -->|3. Next Attack Stage| P
+    H -->|4. Mitigation Action| P
+    end
     
-    B <-->|Threat Analysis| F((Google Gemini AI))
-    
-    B -->|Enriched Data| G[React Frontend Dashboard]
+    P -->|Prioritized Insights| G[React Frontend Dashboard]
 ```
 
 <br/>
