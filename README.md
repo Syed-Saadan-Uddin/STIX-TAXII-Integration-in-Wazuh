@@ -211,9 +211,7 @@ We are constantly pushing the boundaries of what open-source Threat Intelligence
 
 <br/>
 
-## 👨‍💻 License & Author
-
-**Developed and Maintained by:** [Syed Saadan Uddin](https://github.com/Syed-Saadan-Uddin)
+## 👨‍💻 License 
 
 This project is open-source and distributed under the **MIT License**. See the `LICENSE` file for full terms and conditions.
 
